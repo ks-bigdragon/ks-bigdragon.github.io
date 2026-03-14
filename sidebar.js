@@ -7,13 +7,19 @@
 				category: 'Alliance Events',
 				links: [
 				{ label: 'Viking Vengeance',    href: 'Viking-Vengeance.html',    icon: '⚔️' },
-				{ label: 'Swordland Showdown', href: 'Swordland-Showdown.html', icon: '🗡️' },
-				{ label: 'Bear Trap',          href: 'Bear-Trap.html',          icon: '🐻' },
+				{ label: 'Swordland Showdown',  href: 'Swordland-Showdown.html',  icon: '🗡️' },
+				{ label: 'Bear Trap',           href: 'Bear-Trap.html',           icon: '🐻' },
+				],
+			},
+			{
+				category: 'Individual Events',
+				links: [
+				{ label: 'Hall of Governor New Server',    href: 'Hall-of-Governor-New-Server.html', icon: '🏛️' },
 				],
 			},
 		],
 	};
-
+	
 	const LS_KEY = 'sb_open';
 
 	let isOpen = localStorage.getItem(LS_KEY) === '1';
