@@ -3,593 +3,940 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Bear Trap — Complete Guide by [BIG]DRAGON</title>
+
+	<title>Kingshot Bear Trap Guide — Complete Alliance Event Walkthrough v3 | [BIG]DRAGON</title>
+	<meta name="description" content="The most complete Kingshot Bear Trap guide covering all generations (Gen 1–5). Optimal hero setups, joiner stacking mechanics, troop formations, Pitfall upgrade system, damage formulas, and per-player-type strategies. By [BIG]DRAGON." />
+	<meta name="keywords" content="Kingshot Bear Trap, Kingshot Bear Hunt guide, Kingshot alliance event, Kingshot hero setup, Chenko joiner, Amadeus rally leader, Kingshot troop formation, Kingshot Pitfall upgrade, Kingshot damage formula, Kingshot Gen 1 Gen 2 Gen 3 Gen 4 Gen 5, Kingshot best heroes, Kingshot F2P guide, [BIG]DRAGON" />
+	<meta name="author" content="[BIG]DRAGON" />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://ks-bigdragon.github.io/Bear-Trap.html" />
+
+	<meta property="og:type" content="article" />
+	<meta property="og:site_name" content="[BIG]DRAGON Kingshot Guides" />
+	<meta property="og:title" content="Kingshot Bear Trap — Complete Alliance Event Guide v3 | All Generations" />
+	<meta property="og:description" content="Optimal hero combos, joiner stacking mechanics (2 Chenko + 2 Amane = 2.25×), troop formations by generation, Pitfall upgrade math, damage formulas, and F2P/Whale strategies. Verified, multi-source." />
+	<meta property="og:url" content="https://ks-bigdragon.github.io/Bear-Trap.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="article:author" content="[BIG]DRAGON" />
+	<meta property="article:section" content="Game Guide" />
+	<meta property="article:tag" content="Kingshot" />
+	<meta property="article:tag" content="Bear Trap" />
+	<meta property="article:tag" content="Alliance Event" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Kingshot Bear Trap — Complete Guide v3 | [BIG]DRAGON" />
+	<meta name="twitter:description" content="All generations covered. Hero stacking mechanics, troop formations, damage formulas, Pitfall upgrades, and strategies for every player type. Verified." />
+	<meta name="twitter:site" content="@bigdragon_ks" />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Article",
+		"headline": "Kingshot Bear Trap — Complete Alliance Event Guide v3",
+		"description": "The most complete Kingshot Bear Trap guide covering all generations. Optimal hero setups, joiner stacking mechanics, troop formations, Pitfall upgrade system, and damage formulas.",
+		"author": {
+			"@type": "Person",
+			"name": "[BIG]DRAGON",
+			"url": "https://ks-bigdragon.github.io/"
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": "[BIG]DRAGON Kingshot Guides",
+			"url": "https://ks-bigdragon.github.io/"
+		},
+		"url": "https://ks-bigdragon.github.io/Bear-Trap.html",
+		"inLanguage": "en",
+		"about": {
+			"@type": "VideoGame",
+			"name": "Kingshot"
+		},
+		"keywords": "Kingshot, Bear Trap, Bear Hunt, Alliance Event, Hero Guide, Chenko, Amadeus, Troop Formation"
+	}
+	</script>
+
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser"></script>
 	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-950 text-gray-300 font-sans antialiased">
-<div class="max-w-2xl mx-auto px-4 py-10 space-y-4">
+<body style="font-family:'Syne',sans-serif; background:#06080f" class="text-gray-300 antialiased">
 
-	<div class="relative rounded-2xl overflow-hidden border border-white/5 bg-[radial-gradient(ellipse_at_50%_-20%,rgba(220,38,38,0.25)_0%,#0b0f1c_60%,#06080f_100%)]">
-		<div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:linear-gradient(180deg,rgba(0,0,0,0.4)_0%,transparent_70%)] pointer-events-none"></div>
-		<div class="relative px-6 pt-10 pb-7 text-center">
-			<span class="inline-flex items-center gap-2 text-[10px] font-semibold px-3 py-1.5 rounded-full bg-red-950/60 text-red-400 border border-red-800/50 mb-6 tracking-widest uppercase">
-				<i data-feather="zap" class="w-3 h-3"></i>
-				Kingshot · Alliance Event
-			</span>
-			<h1 class="text-5xl font-black text-white tracking-tight leading-none mb-3">🐻 Bear<br>Trap</h1>
-			<p class="text-gray-600 text-[10px] mb-6 uppercase tracking-widest">Complete Guide · All Generations · Verified</p>
-			<div class="flex justify-center gap-2 flex-wrap">
-				<span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2.5 py-1 rounded-full bg-white/5 text-gray-400 border border-white/10"><i data-feather="clock" class="w-3 h-3"></i> 30 Min</span>
-				<span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2.5 py-1 rounded-full bg-white/5 text-gray-400 border border-white/10"><i data-feather="calendar" class="w-3 h-3"></i> Every 2 Days</span>
-				<span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2.5 py-1 rounded-full bg-white/5 text-gray-400 border border-white/10"><i data-feather="users" class="w-3 h-3"></i> Alliance Co-op PvE</span>
-				<span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2.5 py-1 rounded-full bg-white/5 text-gray-400 border border-white/10"><i data-feather="target" class="w-3 h-3"></i> 1.2B Damage Cap</span>
-			</div>
-		</div>
-		<div class="relative border-t border-white/5 px-6 py-4 flex items-center justify-between">
-			<div>
-				<p class="text-[9px] text-gray-600 uppercase tracking-widest mb-0.5">Guide by</p>
-				<p class="text-lg font-black text-white tracking-tight leading-none">[BIG]<span class="text-red-400">DRAGON</span></p>
-			</div>
-			<div class="flex items-center gap-1.5 text-xs text-gray-600">
-				<i data-feather="shield" class="w-3.5 h-3.5 text-red-500"></i>
-				<span>Verified · Multi-source</span>
-			</div>
-		</div>
-	</div>
+	<div class="fixed inset-0 pointer-events-none bg-[radial-gradient(ellipse_120%_40%_at_50%_0%,rgba(220,38,38,0.07)_0%,transparent_70%)]"></div>
 
-	<div class="bg-gray-900 rounded-2xl border border-white/5 overflow-hidden">
-		<div class="flex items-center gap-3 px-5 py-4 border-b border-white/5">
-			<div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-blue-950/60 border border-blue-800/30"><i data-feather="info" class="w-3.5 h-3.5 text-blue-400"></i></div>
-			<h2 class="text-xs font-black uppercase tracking-widest text-white">Overview</h2>
-		</div>
-		<div class="grid grid-cols-2 divide-x divide-y divide-white/5">
-			<div class="px-4 py-3"><p class="text-[10px] text-gray-600 mb-0.5">Duration</p><p class="text-sm font-semibold text-gray-200">30 minutes per hunt</p></div>
-			<div class="px-4 py-3"><p class="text-[10px] text-gray-600 mb-0.5">Frequency</p><p class="text-sm font-semibold text-gray-200">Every 2 days — R4/R5 triggers</p></div>
-			<div class="px-4 py-3"><p class="text-[10px] text-gray-600 mb-0.5">Max Reward Threshold</p><p class="text-sm font-semibold text-gray-200">1.2 billion total alliance damage</p></div>
-			<div class="px-4 py-3"><p class="text-[10px] text-gray-600 mb-0.5">Primary Reward</p><p class="text-sm font-semibold text-gray-200">Forge Hammers + resources</p></div>
-			<div class="px-4 py-3"><p class="text-[10px] text-gray-600 mb-0.5">Troop Loss</p><p class="text-sm font-semibold text-green-400">None — bear does not fight back</p></div>
-			<div class="px-4 py-3"><p class="text-[10px] text-gray-600 mb-0.5">Stamina Cost</p><p class="text-sm font-semibold text-green-400">None — free to participate</p></div>
-		</div>
-		<div class="px-4 pb-4 pt-3">
-			<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-red-950/30 border border-red-900/50 text-red-300">
-				<i data-feather="alert-triangle" class="w-4 h-4 mt-0.5 shrink-0 text-red-400"></i>
-				<span><strong class="text-red-200">The bear does not fight back.</strong> No injuries, no troop losses, nothing. Every single defensive stat on your account is completely worthless in this event. The only two stats that matter are <strong class="text-red-200">Lethality</strong> and <strong class="text-red-200">Attack</strong> — and Lethality matters more.</span>
-			</div>
-		</div>
-	</div>
+	<div class="relative max-w-2xl mx-auto px-4 py-10 space-y-3">
 
-	<div class="bg-gray-900 rounded-2xl border border-white/5 overflow-hidden">
-		<div class="flex items-center gap-3 px-5 py-4 border-b border-white/5">
-			<div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-purple-950/60 border border-purple-800/30"><i data-feather="cpu" class="w-3.5 h-3.5 text-purple-400"></i></div>
-			<h2 class="text-xs font-black uppercase tracking-widest text-white">Damage Mechanics</h2>
-		</div>
-		<div class="px-5 py-4 space-y-3">
-			<p class="text-sm text-gray-500">Understanding how the damage formula actually works is what separates average alliances from those consistently hitting the 1.2B cap.</p>
-
-			<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-				<div class="bg-red-950/30 border border-red-900/50 rounded-xl p-4">
-					<p class="text-xs font-black text-red-400 uppercase tracking-wide mb-2">Why Lethality &gt; Attack</p>
-					<p class="text-xs text-gray-400 leading-relaxed">Both stats are multipliers in the damage formula. But most players' Lethality starts far lower than their Attack, meaning every point of Lethality added produces a larger proportional damage boost than the same point of Attack. Prioritize Lethality in research, gear, and charms above everything else.</p>
+		<header>
+			<div class="relative rounded-3xl overflow-hidden ring-1 ring-white/[0.07] bg-[radial-gradient(ellipse_at_50%_-10%,rgba(220,38,38,0.35)_0%,#0b0e1a_55%,#07090f_100%)] shadow-2xl shadow-red-950/50">
+				<div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:linear-gradient(180deg,rgba(0,0,0,0.5)_0%,transparent_65%)] pointer-events-none"></div>
+				<div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-red-500/50 to-transparent"></div>
+				<div class="relative px-6 pt-12 pb-8 text-center">
+					<span class="inline-flex items-center gap-1.5 text-[9px] font-bold px-3 py-1.5 rounded-full bg-red-950/80 text-red-400 ring-1 ring-red-700/50 mb-7 tracking-[0.2em] uppercase shadow-lg shadow-red-950/50">
+						<i data-feather="zap" class="w-2.5 h-2.5"></i>Kingshot · Alliance Event
+					</span>
+					<h1 class="text-[5.5rem] leading-[0.88] font-black text-white tracking-[-0.03em] mb-4">🐻<br><span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/80">Bear<br>Trap</span></h1>
+					<div class="flex justify-center mb-7">
+						<div class="w-16 h-px bg-gradient-to-r from-transparent via-red-500/60 to-transparent"></div>
+					</div>
+					<p class="text-gray-600 text-[9px] mb-6 uppercase tracking-[0.25em]">Complete Guide · All Generations · Verified · <span class="text-cyan-500/80">v3</span></p>
+					<div class="flex justify-center gap-2 flex-wrap">
+						<span class="inline-flex items-center gap-1.5 text-[9px] font-bold px-3 py-1 rounded-full bg-white/[0.04] text-gray-400 ring-1 ring-white/[0.08] hover:ring-white/20 hover:text-gray-300 transition-all"><i data-feather="clock" class="w-2.5 h-2.5"></i>30 Min</span>
+						<span class="inline-flex items-center gap-1.5 text-[9px] font-bold px-3 py-1 rounded-full bg-white/[0.04] text-gray-400 ring-1 ring-white/[0.08] hover:ring-white/20 hover:text-gray-300 transition-all"><i data-feather="calendar" class="w-2.5 h-2.5"></i>Every 2 Days</span>
+						<span class="inline-flex items-center gap-1.5 text-[9px] font-bold px-3 py-1 rounded-full bg-white/[0.04] text-gray-400 ring-1 ring-white/[0.08] hover:ring-white/20 hover:text-gray-300 transition-all"><i data-feather="users" class="w-2.5 h-2.5"></i>Alliance Co-op PvE</span>
+						<span class="inline-flex items-center gap-1.5 text-[9px] font-bold px-3 py-1 rounded-full bg-white/[0.04] text-gray-400 ring-1 ring-white/[0.08] hover:ring-white/20 hover:text-gray-300 transition-all"><i data-feather="target" class="w-2.5 h-2.5"></i>1.2B Damage Cap</span>
+					</div>
 				</div>
-				<div class="bg-blue-950/30 border border-blue-900/50 rounded-xl p-4">
-					<p class="text-xs font-black text-blue-400 uppercase tracking-wide mb-2">Bear Battle Structure</p>
-					<p class="text-xs text-gray-400 leading-relaxed">The bear consists of 5,000 special infantry troops. Battles run for exactly 10 rounds — not until one side is wiped. Your troops don't die, so your damage per round stays constant (barring chance-based hero skills). Archers deal +10% extra damage from Ranged Strike vs. infantry bear troops.</p>
-				</div>
-			</div>
-
-			<div class="bg-gray-950 border border-white/5 rounded-xl p-4">
-				<p class="text-xs font-bold text-red-400 uppercase tracking-widest mb-3">Damage Formula (simplified)</p>
-				<div class="font-mono text-xs text-gray-400 space-y-1.5">
-					<p class="text-gray-600">Per-troop attack:</p>
-					<p class="bg-gray-900 rounded px-3 py-1.5 text-green-400">base_attack × (1 + attack_bonus) × lethality / 100</p>
-					<p class="text-gray-600 mt-2">Round damage per troop type:</p>
-					<p class="bg-gray-900 rounded px-3 py-1.5 text-green-400">√(troop_count × bear_count) × attack_per_troop / bear_defense / 100 × skillmod</p>
-					<p class="text-gray-600 mt-2">Total battle damage:</p>
-					<p class="bg-gray-900 rounded px-3 py-1.5 text-yellow-400">sum of all 10 rounds × 3 troop types (Archer gets ×1.10)</p>
-				</div>
-			</div>
-
-			<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-purple-950/30 border border-purple-900/50 text-purple-300">
-				<i data-feather="info" class="w-4 h-4 mt-0.5 shrink-0 text-purple-400"></i>
-				<span><strong class="text-purple-200">Diminishing returns on Archers:</strong> The formula uses the square root of troop count, which means stacking 100% Archers gives diminishing returns. That's why keeping minimum Infantry and Cavalry matters — they activate their hero's troop-specific buff skills, which multiplies their small count into meaningful damage. Going 100% Archers actually loses you those big hero multipliers.</span>
-			</div>
-		</div>
-	</div>
-
-	<div class="bg-gray-900 rounded-2xl border border-white/5 overflow-hidden">
-		<div class="flex items-center gap-3 px-5 py-4 border-b border-white/5">
-			<div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-amber-950/60 border border-amber-800/30"><i data-feather="layers" class="w-3.5 h-3.5 text-amber-400"></i></div>
-			<h2 class="text-xs font-black uppercase tracking-widest text-white">Troop Formation — By Generation</h2>
-		</div>
-		<div class="px-5 py-4 space-y-3">
-			<p class="text-sm text-gray-500">The optimal troop split shifts heavily toward Archers as you progress. This is because Archer heroes gain stronger stats each generation and Archers deal the most raw damage. Most guides give you 10/10/80 and call it done — the actual endgame standard is different.</p>
-
-			<div class="overflow-x-auto rounded-xl border border-white/5">
-				<table class="w-full text-sm">
-					<thead>
-						<tr class="bg-gray-950/60 border-b border-white/5">
-							<th class="px-4 py-2.5 text-left text-xs font-black text-gray-500 uppercase tracking-wide">Gen</th>
-							<th class="px-4 py-2.5 text-center text-xs font-black text-gray-500 uppercase tracking-wide">Infantry</th>
-							<th class="px-4 py-2.5 text-center text-xs font-black text-gray-500 uppercase tracking-wide">Cavalry</th>
-							<th class="px-4 py-2.5 text-center text-xs font-black text-amber-500 uppercase tracking-wide">Archers</th>
-							<th class="px-4 py-2.5 text-left text-xs font-black text-gray-500 uppercase tracking-wide">Notes</th>
-						</tr>
-					</thead>
-					<tbody class="divide-y divide-white/5">
-						<tr>
-							<td class="px-4 py-3 font-bold text-blue-400">Gen 1</td>
-							<td class="px-4 py-3 text-center font-semibold text-gray-400">10%</td>
-							<td class="px-4 py-3 text-center font-semibold text-gray-400">30%</td>
-							<td class="px-4 py-3 text-center font-semibold text-amber-400">60%</td>
-							<td class="px-4 py-3 text-xs text-gray-500">Cavalry heroes strongest here</td>
-						</tr>
-						<tr class="bg-white/[0.02]">
-							<td class="px-4 py-3 font-bold text-green-400">Gen 2</td>
-							<td class="px-4 py-3 text-center font-semibold text-gray-400">10%</td>
-							<td class="px-4 py-3 text-center font-semibold text-gray-400">20%</td>
-							<td class="px-4 py-3 text-center font-semibold text-amber-400">70%</td>
-							<td class="px-4 py-3 text-xs text-gray-500">Archer heroes catching up</td>
-						</tr>
-						<tr>
-							<td class="px-4 py-3 font-bold text-purple-400">Gen 3</td>
-							<td class="px-4 py-3 text-center font-semibold text-gray-400">10%</td>
-							<td class="px-4 py-3 text-center font-semibold text-gray-400">10%</td>
-							<td class="px-4 py-3 text-center font-semibold text-amber-400">80%</td>
-							<td class="px-4 py-3 text-xs text-gray-500">Most players stop here — don't</td>
-						</tr>
-						<tr class="bg-amber-950/20">
-							<td class="px-4 py-3 font-bold text-red-400">Gen 4+</td>
-							<td class="px-4 py-3 text-center font-black text-red-400">1%</td>
-							<td class="px-4 py-3 text-center font-black text-red-400">10%</td>
-							<td class="px-4 py-3 text-center font-black text-red-400">89%</td>
-							<td class="px-4 py-3 text-xs font-semibold text-amber-400">True endgame standard — update your preset</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-			<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-amber-950/30 border border-amber-900/50 text-amber-300">
-				<i data-feather="alert-triangle" class="w-4 h-4 mt-0.5 shrink-0 text-amber-400"></i>
-				<span><strong class="text-amber-200">Hard floor — keep at least 5,000 Infantry in absolute numbers</strong>, even at Gen 4+. The damage formula punishes dropping below this disproportionately. Calculate the absolute count, not just the percentage ratio — a 1% split on a small army can fall below this floor without you realizing.</span>
-			</div>
-			<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-blue-950/30 border border-blue-900/50 text-blue-300">
-				<i data-feather="info" class="w-4 h-4 mt-0.5 shrink-0 text-blue-400"></i>
-				<span><strong class="text-blue-200">Finding your personal optimum at Gen 8+:</strong> When your Archer Lethality exceeds your Cavalry Lethality by more than ~358 points, nudge Cavalry down in 5% steps and Archers up. Watch estimated single-hit damage on the march screen — the split that gives the highest number is your current optimum. Redo this after any major gear or research upgrade.</span>
-			</div>
-		</div>
-	</div>
-
-	<div class="bg-gray-900 rounded-2xl border border-white/5 overflow-hidden">
-		<div class="flex items-center gap-3 px-5 py-4 border-b border-white/5">
-			<div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-gray-800 border border-white/5"><i data-feather="users" class="w-3.5 h-3.5 text-gray-400"></i></div>
-			<h2 class="text-xs font-black uppercase tracking-widest text-white">Rally Leader vs. Joiner — What Each Actually Contributes</h2>
-		</div>
-		<div class="px-5 py-4 space-y-3">
-			<p class="text-sm text-gray-500">This table is the single most important thing in the guide. Host and joiner have completely different jobs — playing one role when you should be playing the other is one of the most common damage leaks in the game.</p>
-
-			<div class="overflow-x-auto rounded-xl border border-white/5">
-				<table class="w-full text-xs">
-					<thead>
-						<tr class="bg-gray-950/60 border-b border-white/5">
-							<th class="px-4 py-2.5 text-left font-black text-gray-500 uppercase tracking-wide">Contribution</th>
-							<th class="px-4 py-2.5 text-center font-black text-green-400 uppercase tracking-wide">Rally Leader</th>
-							<th class="px-4 py-2.5 text-center font-black text-blue-400 uppercase tracking-wide">Joiner</th>
-						</tr>
-					</thead>
-					<tbody class="divide-y divide-white/5 text-sm">
-						<tr>
-							<td class="px-4 py-2.5 text-gray-400">Own troops</td>
-							<td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td>
-							<td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td>
-						</tr>
-						<tr class="bg-white/[0.02]">
-							<td class="px-4 py-2.5 text-gray-400">Combat research bonuses</td>
-							<td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td>
-							<td class="px-4 py-2.5 text-center text-red-400 font-bold">❌</td>
-						</tr>
-						<tr>
-							<td class="px-4 py-2.5 text-gray-400">Governor Gear &amp; Charms</td>
-							<td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td>
-							<td class="px-4 py-2.5 text-center text-red-400 font-bold">❌</td>
-						</tr>
-						<tr class="bg-white/[0.02]">
-							<td class="px-4 py-2.5 text-gray-400">Hero equipment stats</td>
-							<td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td>
-							<td class="px-4 py-2.5 text-center text-red-400 font-bold">❌</td>
-						</tr>
-						<tr>
-							<td class="px-4 py-2.5 text-gray-400">All 3 hero skills (all 3 heroes)</td>
-							<td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td>
-							<td class="px-4 py-2.5 text-center text-red-400 font-bold">❌</td>
-						</tr>
-						<tr class="bg-white/[0.02]">
-							<td class="px-4 py-2.5 text-gray-400">Pet bonuses</td>
-							<td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td>
-							<td class="px-4 py-2.5 text-center text-red-400 font-bold">❌</td>
-						</tr>
-						<tr class="bg-amber-950/20">
-							<td class="px-4 py-2.5 font-bold text-gray-200">Hero skill contribution</td>
-							<td class="px-4 py-2.5 text-center text-xs font-semibold text-green-400">All 3 heroes, all skills</td>
-							<td class="px-4 py-2.5 text-center text-xs font-semibold text-amber-400">1st hero's 1st Expedition skill ONLY</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-			<div class="bg-gray-950 border border-white/5 rounded-xl p-4">
-				<p class="text-xs font-bold text-red-400 uppercase tracking-widest mb-2">The Joiner Rule</p>
-				<p class="text-sm text-gray-400">As a joiner, the game picks the <strong class="text-gray-200">top 4 highest-level joiner skills per rally</strong> and ignores the rest entirely. If your first hero has a weak or defensive skill, you are physically displacing a slot that could've held someone else's Chenko. <strong class="text-red-400">Sending no hero at all is genuinely better</strong> — your troops still contribute fully, and you don't block a better skill from being counted.</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="bg-gray-900 rounded-2xl border border-white/5 overflow-hidden">
-		<div class="flex items-center gap-3 px-5 py-4 border-b border-white/5">
-			<div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-indigo-950/60 border border-indigo-800/30"><i data-feather="user" class="w-3.5 h-3.5 text-indigo-400"></i></div>
-			<h2 class="text-xs font-black uppercase tracking-widest text-white">Hero Setup — By Generation</h2>
-		</div>
-		<div class="px-4 pt-3 pb-1">
-			<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-amber-950/30 border border-amber-900/50 text-amber-300 mb-3">
-				<i data-feather="alert-triangle" class="w-4 h-4 mt-0.5 shrink-0 text-amber-400"></i>
-				<span>Bear Hunt is an <strong class="text-amber-200">Expedition event</strong> — only Expedition skills work. Conquest skills do nothing here. The rally leader benefits from all 3 heroes' skills. Joiners only contribute their <strong class="text-amber-200">1st hero's 1st Expedition skill</strong>. The 2nd and 3rd joiner heroes only increase march capacity.</span>
-			</div>
-		</div>
-
-		<div class="divide-y divide-white/5">
-
-			<div>
-				<div class="flex items-center gap-3 px-4 py-2.5 bg-blue-900/40 border-b border-blue-800/30">
-					<span class="text-blue-200 font-black text-sm">Gen 1</span>
-					<span class="text-blue-400 text-xs">· Day 0–40 · Amadeus, Helga, Jabel, Saul, Chenko, Yeonwoo, Amane, Gordon, Howard, Quinn, Fahd</span>
-				</div>
-				<div class="px-4 py-3 grid grid-cols-3 gap-3 text-xs">
-					<div class="font-semibold text-gray-600 uppercase tracking-wide self-center">Role</div>
-					<div class="font-semibold text-gray-500 uppercase tracking-wide">F2P</div>
-					<div class="font-semibold text-gray-500 uppercase tracking-wide">P2W</div>
-					<div class="flex items-center gap-1.5 text-gray-500 font-medium"><i data-feather="star" class="w-3.5 h-3.5"></i>Rally Leader</div>
-					<div class="text-gray-300 font-medium">Howard · Jabel · Quinn</div>
-					<div class="text-gray-300 font-medium">Amadeus · Jabel · Saul</div>
-					<div class="flex items-center gap-1.5 text-gray-500 font-medium col-span-3 pt-1 border-t border-white/5"><i data-feather="navigation" class="w-3.5 h-3.5"></i>Joiner (1st hero slot)</div>
-					<div class="col-span-3 space-y-1">
-						<p><span class="text-green-400 font-bold">✅ Best:</span> <span class="text-gray-300">Chenko · Amadeus · Yeonwoo <em class="text-gray-500">(S-tier — all give +25% Squad Lethality)</em></span></p>
-						<p><span class="text-yellow-400 font-bold">⚡ Good:</span> <span class="text-gray-400">Amane, Gordon <em class="text-gray-500">(A-tier — Attack boost)</em></span></p>
-						<p><span class="text-red-400 font-bold">❌ Never:</span> <span class="text-gray-500">Jabel, Howard, Quinn, Fahd — defensive/economic skills actively displace better joiners from the top-4 slots</span></p>
+				<div class="relative border-t border-white/[0.06] px-6 py-4 flex items-center justify-between bg-black/30">
+					<div>
+						<p class="text-[8px] text-gray-700 uppercase tracking-[0.2em] mb-0.5">Guide by</p>
+						<p class="text-xl font-black text-white tracking-tighter leading-none">[BIG]<span class="text-red-400">DRAGON</span></p>
+					</div>
+					<div class="flex items-center gap-2.5">
+						<span class="text-[9px] bg-cyan-950/70 text-cyan-400 ring-1 ring-cyan-700/50 px-2.5 py-1 rounded-full font-bold uppercase tracking-widest animate-pulse shadow-md shadow-cyan-950/80">v3 · Full</span>
+						<div class="flex items-center gap-1.5 text-[10px] text-gray-600"><i data-feather="shield" class="w-3 h-3 text-red-500/80"></i><span>Verified · Multi-source</span></div>
 					</div>
 				</div>
 			</div>
+		</header>
 
-			<div>
-				<div class="flex items-center gap-3 px-4 py-2.5 bg-green-900/30 border-b border-green-800/20">
-					<span class="text-green-200 font-black text-sm">Gen 2</span>
-					<span class="text-green-400 text-xs">· ~Day 40 · Adds Zoe, Hilde, Marlin</span>
-				</div>
-				<div class="px-4 py-3 grid grid-cols-3 gap-3 text-xs">
-					<div class="flex items-center gap-1.5 text-gray-500 font-medium"><i data-feather="star" class="w-3.5 h-3.5"></i>Rally Leader</div>
-					<div class="text-gray-300 font-medium">Helga · Jabel · Saul</div>
-					<div class="text-gray-300 font-medium">Amadeus · Jabel · Saul <em class="text-gray-500">(Helga if Amadeus joins)</em></div>
-					<div class="flex items-center gap-1.5 text-gray-500 font-medium col-span-3 pt-1 border-t border-white/5"><i data-feather="navigation" class="w-3.5 h-3.5"></i>Joiner</div>
-					<div class="col-span-3 space-y-1">
-						<p><span class="text-green-400 font-bold">✅ Best:</span> <span class="text-gray-300">Chenko · Amadeus · Yeonwoo <em class="text-gray-500">(S-tier)</em></span></p>
-						<p><span class="text-yellow-400 font-bold">⚡ Good:</span> <span class="text-gray-400">Amane, Hilde <em class="text-gray-500">(A-tier — Hilde gives +15% Attack, reliable non-chance)</em></span></p>
-						<p><span class="text-orange-400 font-bold">⚠ Max 1 per rally:</span> <span class="text-gray-400">Marlin <em class="text-gray-500">(chance-based — one is fine, stacking multiples does nothing)</em></span></p>
-						<p><span class="text-red-400 font-bold">❌ Never:</span> <span class="text-gray-500">Jabel, Zoe as joiner — Zoe has a defender widget, useless for offense</span></p>
+		<main class="space-y-3">
+
+			<article aria-label="Event Overview">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-blue-500/70 bg-gradient-to-r from-blue-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-blue-950 ring-1 ring-blue-600/30 shadow-inner shadow-blue-900/50"><i data-feather="info" class="w-3.5 h-3.5 text-blue-400"></i></div>
+						<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Overview</h2>
+					</div>
+					<div class="grid grid-cols-2 divide-x divide-y divide-white/[0.05]">
+						<div class="px-5 py-3.5 hover:bg-white/[0.02] transition-colors"><p class="text-[9px] text-gray-600 uppercase tracking-widest mb-1">Duration</p><p class="text-sm font-semibold text-gray-200">30 minutes per hunt</p></div>
+						<div class="px-5 py-3.5 hover:bg-white/[0.02] transition-colors"><p class="text-[9px] text-gray-600 uppercase tracking-widest mb-1">Frequency</p><p class="text-sm font-semibold text-gray-200">Every 2 days — R4/R5 triggers</p></div>
+						<div class="px-5 py-3.5 hover:bg-white/[0.02] transition-colors"><p class="text-[9px] text-gray-600 uppercase tracking-widest mb-1">Max Reward Threshold</p><p class="text-sm font-semibold text-gray-200">1.2 billion total alliance damage</p></div>
+						<div class="px-5 py-3.5 hover:bg-white/[0.02] transition-colors"><p class="text-[9px] text-gray-600 uppercase tracking-widest mb-1">Primary Reward</p><p class="text-sm font-semibold text-gray-200">Forge Hammers + resources</p></div>
+						<div class="px-5 py-3.5 hover:bg-white/[0.02] transition-colors"><p class="text-[9px] text-gray-600 uppercase tracking-widest mb-1">Troop Loss</p><p class="text-sm font-semibold text-green-400">None — bear does not fight back</p></div>
+						<div class="px-5 py-3.5 hover:bg-white/[0.02] transition-colors"><p class="text-[9px] text-gray-600 uppercase tracking-widest mb-1">Stamina Cost</p><p class="text-sm font-semibold text-green-400">None — free to participate</p></div>
+					</div>
+					<div class="px-4 pb-4 pt-3">
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-red-950/40 border-l-[3px] border-l-red-500/70 ring-1 ring-red-900/40 text-red-300">
+							<i data-feather="alert-triangle" class="w-4 h-4 mt-0.5 shrink-0 text-red-400"></i>
+							<span><strong class="text-red-200">The bear does not fight back.</strong> No injuries, no troop losses, nothing. Every single defensive stat is completely worthless here. The only two stats that matter are <strong class="text-red-200">Lethality</strong> and <strong class="text-red-200">Attack</strong> — and Lethality matters more.</span>
+						</div>
 					</div>
 				</div>
-			</div>
+			</article>
 
-			<div>
-				<div class="flex items-center gap-3 px-4 py-2.5 bg-purple-900/30 border-b border-purple-800/20">
-					<span class="text-purple-200 font-black text-sm">Gen 3</span>
-					<span class="text-purple-400 text-xs">· ~Day 120 · Adds Petra, Eric, Jaeger</span>
-				</div>
-				<div class="px-4 py-3 grid grid-cols-3 gap-3 text-xs">
-					<div class="flex items-center gap-1.5 text-gray-500 font-medium"><i data-feather="star" class="w-3.5 h-3.5"></i>Rally Leader</div>
-					<div class="text-gray-300 font-medium">Helga · Eric · Saul</div>
-					<div class="text-gray-300 font-medium">Amadeus · Eric · Saul <em class="text-gray-500">(or Petra for Cavalry)</em></div>
-					<div class="flex items-center gap-1.5 text-gray-500 font-medium col-span-3 pt-1 border-t border-white/5"><i data-feather="navigation" class="w-3.5 h-3.5"></i>Joiner</div>
-					<div class="col-span-3 space-y-1">
-						<p><span class="text-green-400 font-bold">✅ Best:</span> <span class="text-gray-300">Chenko · Amadeus · Yeonwoo <em class="text-gray-500">(still S-tier — no Gen 3 hero displaces them)</em></span></p>
-						<p><span class="text-yellow-400 font-bold">⚡ Good:</span> <span class="text-gray-400">Amane, Hilde</span></p>
-						<p><span class="text-orange-400 font-bold">⚠ Max 1:</span> <span class="text-gray-400">Petra, Jaeger, Marlin <em class="text-gray-500">(all chance-based — never stack)</em></span></p>
-						<p><span class="text-red-400 font-bold">❌ Never:</span> <span class="text-gray-500">Eric, Jabel — defender skills, directly waste a joiner slot</span></p>
+			<article aria-label="Pre-Event Checklist">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-teal-500/70 bg-gradient-to-r from-teal-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-teal-950 ring-1 ring-teal-600/30 shadow-inner shadow-teal-900/50"><i data-feather="check-square" class="w-3.5 h-3.5 text-teal-400"></i></div>
+						<div class="flex items-center gap-2.5">
+							<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Pre-Event Checklist</h2>
+							<span class="text-[8px] bg-red-950/80 text-red-300 ring-1 ring-red-700/50 px-2 py-0.5 rounded-full font-black uppercase tracking-widest animate-pulse">NEW</span>
+						</div>
+					</div>
+					<div class="px-5 py-4 space-y-3">
+						<p class="text-sm text-gray-500 leading-relaxed">The most common mistakes happen when players skip this checklist. Run through every point before the Bear Hunt starts — not while it's already running.</p>
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+							<div class="flex items-start gap-2.5 bg-black/30 ring-1 ring-white/[0.06] rounded-xl px-3 py-2.5 hover:ring-teal-800/50 hover:bg-teal-950/20 transition-all">
+								<i data-feather="check-circle" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i>
+								<div><p class="font-bold text-gray-200">Recall all gathering troops</p><p class="text-gray-500 mt-0.5">Use Advanced Teleporter if needed. Every minute your troops are still outside = direct damage loss.</p></div>
+							</div>
+							<div class="flex items-start gap-2.5 bg-black/30 ring-1 ring-white/[0.06] rounded-xl px-3 py-2.5 hover:ring-teal-800/50 hover:bg-teal-950/20 transition-all">
+								<i data-feather="check-circle" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i>
+								<div><p class="font-bold text-gray-200">Confirm Pitfall is at Level 5</p><p class="text-gray-500 mt-0.5">Check the Alliance Building tab. Don't launch any rally until Pitfall reaches +25% Attack.</p></div>
+							</div>
+							<div class="flex items-start gap-2.5 bg-black/30 ring-1 ring-white/[0.06] rounded-xl px-3 py-2.5 hover:ring-teal-800/50 hover:bg-teal-950/20 transition-all">
+								<i data-feather="check-circle" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i>
+								<div><p class="font-bold text-gray-200">Activate pet skills</p><p class="text-gray-500 mt-0.5">Black Panther, Mighty Bison, Giant Rhino. The 2-hour window covers the entire event.</p></div>
+							</div>
+							<div class="flex items-start gap-2.5 bg-black/30 ring-1 ring-white/[0.06] rounded-xl px-3 py-2.5 hover:ring-teal-800/50 hover:bg-teal-950/20 transition-all">
+								<i data-feather="check-circle" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i>
+								<div><p class="font-bold text-gray-200">Equip Lethality Governor Gear</p><p class="text-gray-500 mt-0.5">Goggles and boots first. Also equip Governor Charms for Lethality.</p></div>
+							</div>
+							<div class="flex items-start gap-2.5 bg-black/30 ring-1 ring-white/[0.06] rounded-xl px-3 py-2.5 hover:ring-teal-800/50 hover:bg-teal-950/20 transition-all">
+								<i data-feather="check-circle" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i>
+								<div><p class="font-bold text-gray-200">Load your formation preset</p><p class="text-gray-500 mt-0.5">Make sure the preset matches your current gen. Don't adjust manually during the event.</p></div>
+							</div>
+							<div class="flex items-start gap-2.5 bg-black/30 ring-1 ring-white/[0.06] rounded-xl px-3 py-2.5 hover:ring-teal-800/50 hover:bg-teal-950/20 transition-all">
+								<i data-feather="check-circle" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i>
+								<div><p class="font-bold text-gray-200">Set hero slot 1 = best joiner hero</p><p class="text-gray-500 mt-0.5">Chenko / Amadeus / Yeonwoo / Amane. Leave empty if you don't have one properly leveled.</p></div>
+							</div>
+							<div class="flex items-start gap-2.5 bg-black/30 ring-1 ring-white/[0.06] rounded-xl px-3 py-2.5 hover:ring-teal-800/50 hover:bg-teal-950/20 transition-all">
+								<i data-feather="check-circle" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i>
+								<div><p class="font-bold text-gray-200">Teleport near the Pitfall (hosts)</p><p class="text-gray-500 mt-0.5">Rally leaders must be within a 25-second march of the Pitfall. Cluster with other leaders.</p></div>
+							</div>
+							<div class="flex items-start gap-2.5 bg-black/30 ring-1 ring-white/[0.06] rounded-xl px-3 py-2.5 hover:ring-teal-800/50 hover:bg-teal-950/20 transition-all">
+								<i data-feather="check-circle" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i>
+								<div><p class="font-bold text-gray-200">Activate consumable combat buffs</p><p class="text-gray-500 mt-0.5">All rally leader buffs (including cosmetic skins/frames) apply to the entire rally.</p></div>
+							</div>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-red-950/40 border-l-[3px] border-l-red-500/70 ring-1 ring-red-900/30 text-red-300">
+							<i data-feather="alert-triangle" class="w-4 h-4 mt-0.5 shrink-0 text-red-400"></i>
+							<span><strong class="text-red-200">Forgetting to recall troops is the #1 most frequent mistake.</strong> There is no personal cooldown between Bear Hunt hits — the only bottleneck is march time. Troops still gathering when the event starts means you've already lost the race before your first rally even launches. Keep a few <strong class="text-red-100">Advanced Teleporters</strong> specifically for this event.</span>
+						</div>
 					</div>
 				</div>
-			</div>
+			</article>
 
-			<div>
-				<div class="flex items-center gap-3 px-4 py-2.5 bg-orange-900/30 border-b border-orange-800/20">
-					<span class="text-orange-200 font-black text-sm">Gen 4</span>
-					<span class="text-orange-400 text-xs">· ~Day 200 · Adds Rosa, Alcar, Margot</span>
-				</div>
-				<div class="px-4 py-3 grid grid-cols-3 gap-3 text-xs">
-					<div class="flex items-center gap-1.5 text-gray-500 font-medium"><i data-feather="star" class="w-3.5 h-3.5"></i>Rally Leader</div>
-					<div class="text-gray-300 font-medium">Helga · Alcar · Saul</div>
-					<div class="text-gray-300 font-medium">Amadeus · Alcar · Saul <em class="text-gray-500">(Rosa for Archer focus)</em></div>
-					<div class="flex items-center gap-1.5 text-gray-500 font-medium col-span-3 pt-1 border-t border-white/5"><i data-feather="navigation" class="w-3.5 h-3.5"></i>Joiner</div>
-					<div class="col-span-3 space-y-1">
-						<p><span class="text-green-400 font-bold">✅ Best:</span> <span class="text-gray-300">Chenko · Amadeus · Yeonwoo · Margot <em class="text-gray-500">(Margot joins A-tier at Gen 4)</em></span></p>
-						<p><span class="text-yellow-400 font-bold">⚡ Good:</span> <span class="text-gray-400">Amane, Hilde</span></p>
-						<p><span class="text-orange-400 font-bold">⚠ Max 1:</span> <span class="text-gray-400">Rosa, Alcar, Petra <em class="text-gray-500">(chance-based)</em></span></p>
-						<p><span class="text-red-400 font-bold">❌ Never:</span> <span class="text-gray-500">Alcar (defender skill), Jabel, Zoe, Eric</span></p>
+			<article aria-label="Damage Mechanics">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-purple-500/70 bg-gradient-to-r from-purple-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-purple-950 ring-1 ring-purple-600/30 shadow-inner shadow-purple-900/50"><i data-feather="cpu" class="w-3.5 h-3.5 text-purple-400"></i></div>
+						<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Damage Mechanics</h2>
+					</div>
+					<div class="px-5 py-4 space-y-3">
+						<p class="text-sm text-gray-500 leading-relaxed">Understanding how the damage formula works separates average alliances from those consistently hitting the 1.2B cap.</p>
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+							<div class="bg-red-950/30 border-l-[3px] border-l-red-500/60 ring-1 ring-red-900/30 rounded-xl p-4">
+								<p class="text-[10px] font-black text-red-400 uppercase tracking-wider mb-2">Why Lethality &gt; Attack</p>
+								<p class="text-xs text-gray-400 leading-relaxed">Both are multipliers in the damage formula. But most players' Lethality starts far lower than Attack — every point of Lethality added produces a larger proportional boost. If your Attack is 10,000 and Lethality is 2,000, adding 500 Lethality = +25% multiplier. Adding 500 Attack = only +5%. Same resource investment, dramatically different result.</p>
+							</div>
+							<div class="bg-blue-950/30 border-l-[3px] border-l-blue-500/60 ring-1 ring-blue-900/30 rounded-xl p-4">
+								<p class="text-[10px] font-black text-blue-400 uppercase tracking-wider mb-2">Bear Battle Structure</p>
+								<p class="text-xs text-gray-400 leading-relaxed">The bear consists of 5,000 special infantry troops with 10 Defense and 83.33 Health each. Battles run for exactly 10 rounds. Your troops don't die, so damage per round stays constant (barring chance-based hero skills). Archers deal +10% extra from Ranged Strike vs. infantry bear troops.</p>
+							</div>
+						</div>
+						<div class="bg-black/60 ring-1 ring-white/[0.07] rounded-xl p-4">
+							<p class="text-[10px] font-black text-red-400 uppercase tracking-[0.15em] mb-3">Damage Formula (Full)</p>
+							<div class="font-mono text-[11px] text-gray-400 space-y-1.5">
+								<p class="text-gray-600 text-[10px] uppercase tracking-wider">Full kills formula:</p>
+								<p class="bg-black/70 ring-1 ring-green-900/40 rounded-lg px-3 py-2 text-green-400">Kills = √Troops × (Attack × Lethality) / (Enemy Defense × Enemy Health) × SkillMod</p>
+								<p class="text-gray-600 text-[10px] uppercase tracking-wider mt-3">SkillMod breakdown:</p>
+								<p class="bg-black/70 ring-1 ring-blue-900/40 rounded-lg px-3 py-2 text-blue-400">SkillMod = (DamageUp × OppDefenseDown) / (OppDamageDown × DefenseUp)</p>
+								<p class="text-gray-600 text-[10px] uppercase tracking-wider mt-3">Per-troop attack vs bear:</p>
+								<p class="bg-black/70 ring-1 ring-green-900/40 rounded-lg px-3 py-2 text-green-400">base_attack × (1 + attack_bonus) × lethality / 100</p>
+								<p class="text-gray-600 text-[10px] uppercase tracking-wider mt-3">Total battle damage:</p>
+								<p class="bg-black/70 ring-1 ring-yellow-900/40 rounded-lg px-3 py-2 text-yellow-400">sum of all 10 rounds × 3 troop types (Archer gets ×1.10)</p>
+							</div>
+						</div>
+						<div class="bg-yellow-950/20 border-l-[3px] border-l-yellow-500/50 ring-1 ring-yellow-800/20 rounded-xl p-4">
+							<p class="text-[10px] font-black text-yellow-400 uppercase tracking-wider mb-2">Expedition Skills vs Widget (Exclusive Skills)</p>
+							<div class="grid grid-cols-2 gap-3 text-xs">
+								<div class="bg-black/30 rounded-lg p-2.5 ring-1 ring-white/[0.05]"><p class="font-bold text-gray-300 mb-1">Expedition Skills</p><p class="text-gray-500">Additive — stack linearly. Chenko's +25% Lethality is added, not multiplied.</p></div>
+								<div class="bg-black/30 rounded-lg p-2.5 ring-1 ring-yellow-900/20"><p class="font-bold text-yellow-300 mb-1">Widget Skills ⚡</p><p class="text-gray-500">Can be multiplicative — scales proportionally with your existing stats. Higher stats = bigger Widget gain.</p></div>
+							</div>
+							<p class="text-xs text-gray-500 mt-2">Widgets only activate from the Rally Leader slot. That's why Helga in slot 2–3 wastes her biggest strength — her Widget never fires.</p>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-purple-950/40 border-l-[3px] border-l-purple-500/60 ring-1 ring-purple-900/30 text-purple-300">
+							<i data-feather="info" class="w-4 h-4 mt-0.5 shrink-0 text-purple-400"></i>
+							<span><strong class="text-purple-200">Diminishing returns on Archers:</strong> The formula uses √troop_count, meaning 100% Archers gives diminishing returns. Infantry and Cavalry activate hero troop-type buff skills — removing them loses those multipliers entirely. Minimum percentages exist to trigger those buffs, not for their own damage contribution.</span>
+						</div>
+						<div class="bg-black/60 ring-1 ring-white/[0.07] rounded-xl p-4">
+							<div class="flex items-center gap-2.5 mb-3">
+								<p class="text-[10px] font-black text-amber-400 uppercase tracking-[0.15em]">Actual Troop Base Stats (T6)</p>
+								<span class="text-[8px] bg-amber-950/80 text-amber-400 ring-1 ring-amber-700/40 px-2 py-0.5 rounded-full font-black uppercase tracking-widest animate-pulse">VERIFIED</span>
+							</div>
+							<p class="text-xs text-gray-500 mb-2.5">Stats shown in-game are placeholders. These are the real base stats used in damage calculations:</p>
+							<div class="overflow-x-auto rounded-xl ring-1 ring-white/[0.07]">
+								<table class="w-full font-mono text-[11px]">
+									<thead><tr class="bg-black/60 border-b border-white/[0.06]"><th class="px-3 py-2.5 text-left text-[9px] text-gray-500 uppercase tracking-widest">Troop</th><th class="px-3 py-2.5 text-center text-[9px] text-gray-500 uppercase tracking-widest">Attack</th><th class="px-3 py-2.5 text-center text-[9px] text-gray-500 uppercase tracking-widest">Lethality</th><th class="px-3 py-2.5 text-center text-[9px] text-gray-500 uppercase tracking-widest">Health</th><th class="px-3 py-2.5 text-center text-[9px] text-gray-500 uppercase tracking-widest">Defense</th></tr></thead>
+									<tbody class="divide-y divide-white/[0.05]">
+										<tr class="hover:bg-white/[0.02] transition-colors"><td class="px-3 py-2.5 text-blue-400">Infantry</td><td class="px-3 py-2.5 text-center text-gray-300">243</td><td class="px-3 py-2.5 text-center text-gray-300">10</td><td class="px-3 py-2.5 text-center text-gray-300">730</td><td class="px-3 py-2.5 text-center text-gray-300">10</td></tr>
+										<tr class="bg-white/[0.015] hover:bg-white/[0.03] transition-colors"><td class="px-3 py-2.5 text-yellow-400">Cavalry</td><td class="px-3 py-2.5 text-center text-gray-300">730</td><td class="px-3 py-2.5 text-center text-gray-300">10</td><td class="px-3 py-2.5 text-center text-gray-300">243</td><td class="px-3 py-2.5 text-center text-gray-300">10</td></tr>
+										<tr class="hover:bg-white/[0.02] transition-colors"><td class="px-3 py-2.5 text-amber-400">Archer</td><td class="px-3 py-2.5 text-center text-amber-400 font-bold">974</td><td class="px-3 py-2.5 text-center text-gray-300">10</td><td class="px-3 py-2.5 text-center text-gray-300">183</td><td class="px-3 py-2.5 text-center text-gray-300">10</td></tr>
+										<tr class="bg-red-950/20 hover:bg-red-950/30 transition-colors"><td class="px-3 py-2.5 text-red-400">Bear Infantry</td><td class="px-3 py-2.5 text-center text-gray-600">—</td><td class="px-3 py-2.5 text-center text-gray-600">—</td><td class="px-3 py-2.5 text-center text-gray-300">83.33</td><td class="px-3 py-2.5 text-center text-gray-300">10</td></tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="text-[10px] text-gray-600 mt-2">Archers have 4× the base Attack of Infantry — this is why Archer-heavy formations dominate Bear Hunt damage output.</p>
+						</div>
 					</div>
 				</div>
-			</div>
+			</article>
 
-			<div>
-				<div class="flex items-center gap-3 px-4 py-2.5 bg-red-900/30 border-b border-red-800/20">
-					<span class="text-red-200 font-black text-sm">Gen 5</span>
-					<span class="text-red-400 text-xs">· ~Day 280 · Adds Long Fei, Thrud, Vivian</span>
-				</div>
-				<div class="px-4 py-3 grid grid-cols-3 gap-3 text-xs">
-					<div class="flex items-center gap-1.5 text-gray-500 font-medium"><i data-feather="star" class="w-3.5 h-3.5"></i>Rally Leader</div>
-					<div class="text-gray-300 font-medium">Helga · Alcar or Vivian · Saul</div>
-					<div class="text-gray-300 font-medium">Amadeus or Thrud · Alcar · Saul</div>
-					<div class="flex items-center gap-1.5 text-gray-500 font-medium col-span-3 pt-1 border-t border-white/5"><i data-feather="navigation" class="w-3.5 h-3.5"></i>Joiner</div>
-					<div class="col-span-3 space-y-1">
-						<p><span class="text-green-400 font-bold">✅ Best:</span> <span class="text-gray-300">Chenko · Amadeus · Yeonwoo · Margot · Vivian <em class="text-gray-500">(A-tier)</em></span></p>
-						<p><span class="text-yellow-400 font-bold">⚡ Good:</span> <span class="text-gray-400">Thrud <em class="text-gray-500">(Archer+Infantry only — use 1, don't stack)</em> · Hilde, Amane</span></p>
-						<p><span class="text-red-400 font-bold">❌ Never:</span> <span class="text-gray-500">Long Fei — 2 defensive skills, 1 offensive. Actively worse than many Gen 1 heroes as joiner. Do not use.</span></p>
+			<article aria-label="Stat Progression Priority">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-violet-500/70 bg-gradient-to-r from-violet-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-violet-950 ring-1 ring-violet-600/30 shadow-inner shadow-violet-900/50"><i data-feather="bar-chart-2" class="w-3.5 h-3.5 text-violet-400"></i></div>
+						<div class="flex items-center gap-2.5">
+							<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Stat Progression Priority</h2>
+							<span class="text-[8px] bg-red-950/80 text-red-300 ring-1 ring-red-700/50 px-2 py-0.5 rounded-full font-black uppercase tracking-widest animate-pulse">NEW</span>
+						</div>
+					</div>
+					<div class="px-5 py-4 space-y-3">
+						<p class="text-sm text-gray-500 leading-relaxed">This is the upgrade order that delivers the biggest Bear Hunt damage impact — ranked from highest to lowest return. Focus your resources in this order.</p>
+						<div class="space-y-2">
+							<div class="flex items-start gap-3.5 bg-red-950/25 ring-1 ring-red-800/30 rounded-xl px-4 py-3.5">
+								<span class="w-7 h-7 rounded-full bg-red-500/20 ring-1 ring-red-500/60 text-red-300 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">1</span>
+								<div class="text-xs"><p class="font-bold text-red-300 text-sm mb-0.5">Archer Lethality</p><p class="text-gray-500">Highest priority — push via Governor Gear (goggles), Academy Research, Islands, War Academy, Governor Charms, Chief Gear. Long-term: T11 Archers and Truegold upgrades compound across every event.</p></div>
+							</div>
+							<div class="flex items-start gap-3.5 bg-orange-950/25 ring-1 ring-orange-800/30 rounded-xl px-4 py-3.5">
+								<span class="w-7 h-7 rounded-full bg-orange-500/20 ring-1 ring-orange-500/60 text-orange-300 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">2</span>
+								<div class="text-xs"><p class="font-bold text-orange-300 text-sm mb-0.5">Archer Attack</p><p class="text-gray-500">Governor Gear boots first, then Academy Research Archer Attack. Once Lethality is high, Attack becomes the next bottleneck.</p></div>
+							</div>
+							<div class="flex items-start gap-3.5 bg-yellow-950/25 ring-1 ring-yellow-800/30 rounded-xl px-4 py-3.5">
+								<span class="w-7 h-7 rounded-full bg-yellow-500/20 ring-1 ring-yellow-500/60 text-yellow-300 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">3</span>
+								<div class="text-xs"><p class="font-bold text-yellow-300 text-sm mb-0.5">Troop Deployment Capacity</p><p class="text-gray-500">More troops per march = more damage per rally. Command Center upgrades + Mighty Bison pet. Small capacity directly caps how much damage you can generate per hit.</p></div>
+							</div>
+							<div class="flex items-start gap-3.5 bg-green-950/25 ring-1 ring-green-800/30 rounded-xl px-4 py-3.5">
+								<span class="w-7 h-7 rounded-full bg-green-500/20 ring-1 ring-green-500/60 text-green-300 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">4</span>
+								<div class="text-xs"><p class="font-bold text-green-300 text-sm mb-0.5">Cavalry Lethality</p><p class="text-gray-500">Important for maintaining a stable Cavalry ratio. Before Gen 8, Cavalry Lethality is nearly on par with Archer — don't let it fall too far behind.</p></div>
+							</div>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-violet-950/40 border-l-[3px] border-l-violet-500/60 ring-1 ring-violet-900/30 text-violet-300">
+							<i data-feather="info" class="w-4 h-4 mt-0.5 shrink-0 text-violet-400"></i>
+							<span><strong class="text-violet-200">Compound effect:</strong> T11 Archers and Truegold upgrades deliver continuously compounding returns across every event. This investment isn't just for Bear Hunt — it benefits every PvE and PvP event for the lifetime of your account.</span>
+						</div>
 					</div>
 				</div>
-			</div>
+			</article>
 
-		</div>
+			<article aria-label="Troop Formation by Generation">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-amber-500/70 bg-gradient-to-r from-amber-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-amber-950 ring-1 ring-amber-600/30 shadow-inner shadow-amber-900/50"><i data-feather="layers" class="w-3.5 h-3.5 text-amber-400"></i></div>
+						<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Troop Formation — By Generation</h2>
+					</div>
+					<div class="px-5 py-4 space-y-3">
+						<p class="text-sm text-gray-500 leading-relaxed">The optimal troop split shifts heavily toward Archers as you progress. Most guides give you 10/10/80 and call it done — the actual endgame standard is different.</p>
+						<div class="overflow-x-auto rounded-xl ring-1 ring-white/[0.07]">
+							<table class="w-full text-sm">
+								<thead><tr class="bg-black/60 border-b border-white/[0.07]">
+									<th class="px-4 py-3 text-left text-[9px] font-black text-gray-500 uppercase tracking-widest">Gen</th>
+									<th class="px-4 py-3 text-center text-[9px] font-black text-gray-500 uppercase tracking-widest">Infantry</th>
+									<th class="px-4 py-3 text-center text-[9px] font-black text-yellow-500/80 uppercase tracking-widest">Cavalry</th>
+									<th class="px-4 py-3 text-center text-[9px] font-black text-amber-500/80 uppercase tracking-widest">Archers</th>
+									<th class="px-4 py-3 text-left text-[9px] font-black text-gray-500 uppercase tracking-widest">Notes</th>
+								</tr></thead>
+								<tbody class="divide-y divide-white/[0.05]">
+									<tr class="hover:bg-white/[0.025] transition-colors"><td class="px-4 py-3 font-bold text-blue-400">Gen 1</td><td class="px-4 py-3 text-center font-semibold text-gray-400">10%</td><td class="px-4 py-3 text-center font-semibold text-yellow-400">30%</td><td class="px-4 py-3 text-center font-semibold text-amber-400">60%</td><td class="px-4 py-3 text-xs text-gray-500">Cavalry heroes strongest here</td></tr>
+									<tr class="bg-white/[0.015] hover:bg-white/[0.03] transition-colors"><td class="px-4 py-3 font-bold text-green-400">Gen 2</td><td class="px-4 py-3 text-center font-semibold text-gray-400">10%</td><td class="px-4 py-3 text-center font-semibold text-yellow-400">20%</td><td class="px-4 py-3 text-center font-semibold text-amber-400">70%</td><td class="px-4 py-3 text-xs text-gray-500">Archer heroes catching up</td></tr>
+									<tr class="hover:bg-white/[0.025] transition-colors"><td class="px-4 py-3 font-bold text-purple-400">Gen 3</td><td class="px-4 py-3 text-center font-semibold text-gray-400">10%</td><td class="px-4 py-3 text-center font-semibold text-yellow-400">10%</td><td class="px-4 py-3 text-center font-semibold text-amber-400">80%</td><td class="px-4 py-3 text-xs text-gray-500">Most players stop here — don't</td></tr>
+									<tr class="bg-yellow-950/15 hover:bg-yellow-950/25 transition-colors"><td class="px-4 py-3 font-bold text-orange-400">Gen 4–7</td><td class="px-4 py-3 text-center font-black text-orange-400">1%</td><td class="px-4 py-3 text-center font-black text-yellow-400">25–30%</td><td class="px-4 py-3 text-center font-black text-amber-400">65–70%</td><td class="px-4 py-3 text-xs text-yellow-500">Cavalry still matters — Lethality gap not wide yet</td></tr>
+									<tr class="bg-amber-950/20 hover:bg-amber-950/35 transition-colors"><td class="px-4 py-3 font-bold text-red-400">Gen 8+</td><td class="px-4 py-3 text-center font-black text-red-400">1%</td><td class="px-4 py-3 text-center font-black text-red-400">10%</td><td class="px-4 py-3 text-center font-black text-red-400">89%</td><td class="px-4 py-3 text-xs font-semibold text-amber-400">True endgame — Archer Lethality &gt;&gt; Cavalry</td></tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-yellow-950/35 border-l-[3px] border-l-yellow-500/60 ring-1 ring-yellow-800/30 text-yellow-300">
+							<i data-feather="alert-circle" class="w-4 h-4 mt-0.5 shrink-0 text-yellow-400"></i>
+							<span><strong class="text-yellow-200">Key nuance for Gen 4–7:</strong> Before Gen 8, Cavalry Lethality and Archer Lethality are still nearly equal. Keep <strong class="text-yellow-100">Cavalry at 25–30%</strong> to reliably trigger Cavalry hero damage buffs. Only when Archer Lethality exceeds Cavalry Lethality by more than ~358 points should you drop Cavalry to 10% and push Archers to 89%.</span>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-amber-950/35 border-l-[3px] border-l-amber-500/60 ring-1 ring-amber-900/30 text-amber-300">
+							<i data-feather="alert-triangle" class="w-4 h-4 mt-0.5 shrink-0 text-amber-400"></i>
+							<span><strong class="text-amber-200">Hard floor — minimum 5,000 Infantry in absolute numbers</strong>, even at Gen 8+. The damage formula penalizes dropping below this disproportionately. Count in absolute numbers, not just percentages — 1% of a small army can fall below this floor without you noticing.</span>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-blue-950/35 border-l-[3px] border-l-blue-500/60 ring-1 ring-blue-900/30 text-blue-300">
+							<i data-feather="info" class="w-4 h-4 mt-0.5 shrink-0 text-blue-400"></i>
+							<span><strong class="text-blue-200">Fine-tuning your personal optimum:</strong> Adjust the split in 1–5% increments. The ratio that produces the highest single-hit damage on the march screen is your current optimum. Repeat after every major gear or research upgrade. Use kingshotsimulator.com for accurate results.</span>
+						</div>
+					</div>
+				</div>
+			</article>
 
-		<div class="px-4 py-4 space-y-3 border-t border-white/5">
-			<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-red-950/30 border border-red-900/50 text-red-300">
-				<i data-feather="star" class="w-4 h-4 mt-0.5 shrink-0 text-red-400"></i>
-				<span><strong class="text-red-200">Amadeus: Host or Joiner?</strong> If your Helga is well-developed (4–5 star, solid widget), let Helga host your main rally and use Amadeus to join several others throughout the 30 minutes. His Lethality skill contributed across multiple rallies typically outperforms him sitting in one rally the whole event. If no one else can host at a competitive level, Amadeus hosts — no debate.</span>
+			<article aria-label="Rally Leader vs Joiner">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-gray-500/50 bg-gradient-to-r from-gray-800/30 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-gray-800 ring-1 ring-white/10"><i data-feather="users" class="w-3.5 h-3.5 text-gray-400"></i></div>
+						<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Rally Leader vs. Joiner — What Each Contributes</h2>
+					</div>
+					<div class="px-5 py-4 space-y-3">
+						<p class="text-sm text-gray-500 leading-relaxed">Host and joiner have completely different jobs. Playing the wrong role at the wrong time is the most common damage leak in this game.</p>
+						<div class="overflow-x-auto rounded-xl ring-1 ring-white/[0.07]">
+							<table class="w-full text-xs">
+								<thead><tr class="bg-black/60 border-b border-white/[0.07]">
+									<th class="px-4 py-3 text-left text-[9px] font-black text-gray-500 uppercase tracking-widest">Contribution</th>
+									<th class="px-4 py-3 text-center text-[9px] font-black text-green-400/80 uppercase tracking-widest">Rally Leader</th>
+									<th class="px-4 py-3 text-center text-[9px] font-black text-blue-400/80 uppercase tracking-widest">Joiner</th>
+								</tr></thead>
+								<tbody class="divide-y divide-white/[0.05] text-sm">
+									<tr class="hover:bg-white/[0.025] transition-colors"><td class="px-4 py-2.5 text-gray-400">Own troops</td><td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td><td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td></tr>
+									<tr class="bg-white/[0.015] hover:bg-white/[0.03] transition-colors"><td class="px-4 py-2.5 text-gray-400">Combat research bonuses</td><td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td><td class="px-4 py-2.5 text-center text-red-500 font-bold">❌</td></tr>
+									<tr class="hover:bg-white/[0.025] transition-colors"><td class="px-4 py-2.5 text-gray-400">Governor Gear &amp; Charms</td><td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td><td class="px-4 py-2.5 text-center text-red-500 font-bold">❌</td></tr>
+									<tr class="bg-white/[0.015] hover:bg-white/[0.03] transition-colors"><td class="px-4 py-2.5 text-gray-400">Hero equipment stats</td><td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td><td class="px-4 py-2.5 text-center text-red-500 font-bold">❌</td></tr>
+									<tr class="hover:bg-white/[0.025] transition-colors"><td class="px-4 py-2.5 text-gray-400">All 3 hero skills (all 3 heroes)</td><td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td><td class="px-4 py-2.5 text-center text-red-500 font-bold">❌</td></tr>
+									<tr class="bg-white/[0.015] hover:bg-white/[0.03] transition-colors"><td class="px-4 py-2.5 text-gray-400">Pet bonuses</td><td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td><td class="px-4 py-2.5 text-center text-red-500 font-bold">❌</td></tr>
+									<tr class="hover:bg-white/[0.025] transition-colors"><td class="px-4 py-2.5 text-gray-400">Consumable combat buffs</td><td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td><td class="px-4 py-2.5 text-center text-red-500 font-bold">❌</td></tr>
+									<tr class="bg-white/[0.015] hover:bg-white/[0.03] transition-colors"><td class="px-4 py-2.5 text-gray-400">Cosmetic buffs (skin, frame, island)</td><td class="px-4 py-2.5 text-center text-green-400 font-bold">✅</td><td class="px-4 py-2.5 text-center text-red-500 font-bold">❌</td></tr>
+									<tr class="bg-amber-950/20 hover:bg-amber-950/30 transition-colors"><td class="px-4 py-2.5 font-bold text-gray-200">Hero skill contribution</td><td class="px-4 py-2.5 text-center text-xs font-semibold text-green-400">All 3 heroes, all skills</td><td class="px-4 py-2.5 text-center text-xs font-semibold text-amber-400">1st hero's 1st Expedition skill ONLY</td></tr>
+									<tr class="bg-blue-950/10 hover:bg-blue-950/20 transition-colors"><td class="px-4 py-2.5 text-gray-400">Hero gear (on joiner heroes)</td><td class="px-4 py-2.5 text-center text-gray-600 text-xs">N/A</td><td class="px-4 py-2.5 text-center text-red-400 font-bold text-xs">❌ Completely ignored</td></tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="bg-blue-950/30 border-l-[3px] border-l-blue-500/60 ring-1 ring-blue-800/30 rounded-xl p-4">
+							<p class="text-[10px] font-black text-blue-400 uppercase tracking-[0.15em] mb-2">📊 Your Personal Damage Score Depends on Whose Rally You Join</p>
+							<p class="text-sm text-gray-400 leading-relaxed">As a joiner, your damage points come from your troops — but the stats applied to those troops come entirely from the <strong class="text-gray-200">rally leader's stats</strong>. Joining the strongest rally leader = higher personal damage with the same troops. <strong class="text-blue-200">Actively seek out rallies from the most powerful players in the alliance, not just the nearest location.</strong></p>
+						</div>
+						<div class="bg-black/60 ring-1 ring-white/[0.07] rounded-xl p-4">
+							<p class="text-[10px] font-bold text-red-400 uppercase tracking-[0.15em] mb-2">The Joiner Rule</p>
+							<p class="text-sm text-gray-400 leading-relaxed">The game picks the <strong class="text-gray-200">top 4 highest-level joiner skills per rally</strong> and ignores the rest. If your first hero has a weak or defensive skill, you are physically replacing a slot that Chenko could occupy. <strong class="text-red-400">Sending zero heroes is far better</strong> — your troops still contribute fully, and you don't block a better skill.</p>
+						</div>
+						<div class="bg-yellow-950/25 border-l-[3px] border-l-yellow-500/50 ring-1 ring-yellow-800/25 rounded-xl p-4">
+							<p class="text-[10px] font-black text-yellow-400 uppercase tracking-wider mb-2">⚡ Mythic Heroes: 3 Expedition Skills vs Epic: 2 Skills</p>
+							<p class="text-sm text-gray-400 leading-relaxed">Mythic (Gold) heroes have <strong class="text-gray-200">3 expedition skills</strong> — Epic heroes only have <strong class="text-gray-200">2</strong>. That one extra skill makes a significant difference for rally leaders. Mythic heroes also have <strong class="text-yellow-200">Widgets</strong>, which are multiplicative and scale with your existing stats — the higher your stats, the bigger the Widget gain. This is why Helga and Amadeus as rally leaders are so far ahead of Epic alternatives, even at the same star level.</p>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-red-950/40 border-l-[3px] border-l-red-500/70 ring-1 ring-red-900/30 text-red-300">
+							<i data-feather="alert-octagon" class="w-4 h-4 mt-0.5 shrink-0 text-red-400"></i>
+							<span><strong class="text-red-200">Skill Level 5 always wins — even a bad skill.</strong> The game prioritizes joiner skills by level first, then join order. Howard at Level 5 (DefenseUp) will displace Chenko at Level 4. <strong class="text-red-100">Always max your joiner skill to Level 5 before using it as a joiner.</strong> An S-tier hero that hasn't been maxed can be bumped by any maxed garbage hero.</span>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article aria-label="Joiner Stacking Mechanics">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-cyan-500/70 bg-gradient-to-r from-cyan-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-cyan-950 ring-1 ring-cyan-600/30 shadow-inner shadow-cyan-900/50"><i data-feather="git-merge" class="w-3.5 h-3.5 text-cyan-400"></i></div>
+						<div class="flex items-center gap-2.5">
+							<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Joiner Stacking — The Unexplained Mechanic</h2>
+							<span class="text-[8px] bg-cyan-950/80 text-cyan-300 ring-1 ring-cyan-700/50 px-2 py-0.5 rounded-full font-black uppercase tracking-widest animate-pulse shadow-sm shadow-cyan-950">CRITICAL</span>
+						</div>
+					</div>
+					<div class="px-5 py-4 space-y-3">
+						<p class="text-sm text-gray-500 leading-relaxed">Most players run 4 Chenko and think that's optimal. It's not. The game uses an <strong class="text-gray-300">effect_op identifier system</strong> that makes mixing heroes mathematically superior to stacking the same hero.</p>
+						<div class="overflow-x-auto rounded-xl ring-1 ring-white/[0.07]">
+							<table class="w-full text-xs">
+								<thead><tr class="bg-black/60 border-b border-white/[0.07]">
+									<th class="px-3 py-3 text-left text-[9px] font-black text-gray-500 uppercase tracking-widest">Hero</th>
+									<th class="px-3 py-3 text-center text-[9px] font-black text-gray-500 uppercase tracking-widest">Skill Type</th>
+									<th class="px-3 py-3 text-center text-[9px] font-black text-cyan-400/80 uppercase tracking-widest">Effect ID</th>
+									<th class="px-3 py-3 text-left text-[9px] font-black text-gray-500 uppercase tracking-widest">Value &amp; Notes</th>
+								</tr></thead>
+								<tbody class="divide-y divide-white/[0.05]">
+									<tr class="bg-green-950/15 hover:bg-green-950/25 transition-colors"><td class="px-3 py-2.5 font-bold text-green-300">Chenko</td><td class="px-3 py-2.5 text-center text-gray-400">DamageUp</td><td class="px-3 py-2.5 text-center text-cyan-400 font-mono font-bold">101</td><td class="px-3 py-2.5 text-gray-400">+25% Lethality · <span class="text-green-400">S-tier</span></td></tr>
+									<tr class="bg-green-950/15 hover:bg-green-950/25 transition-colors"><td class="px-3 py-2.5 font-bold text-green-300">Amadeus</td><td class="px-3 py-2.5 text-center text-gray-400">DamageUp</td><td class="px-3 py-2.5 text-center text-cyan-400 font-mono font-bold">101</td><td class="px-3 py-2.5 text-gray-400">+25% Lethality · <span class="text-green-400">S-tier</span></td></tr>
+									<tr class="bg-green-950/15 hover:bg-green-950/25 transition-colors"><td class="px-3 py-2.5 font-bold text-green-300">Yeonwoo</td><td class="px-3 py-2.5 text-center text-gray-400">DamageUp</td><td class="px-3 py-2.5 text-center text-cyan-400 font-mono font-bold">101</td><td class="px-3 py-2.5 text-gray-400">+25% Lethality · <span class="text-amber-400">Requires ≥4★</span></td></tr>
+									<tr class="bg-green-950/15 hover:bg-green-950/25 transition-colors"><td class="px-3 py-2.5 font-bold text-green-300">Vivian</td><td class="px-3 py-2.5 text-center text-gray-400">DamageUp</td><td class="px-3 py-2.5 text-center text-cyan-400 font-mono font-bold">101</td><td class="px-3 py-2.5 text-gray-400">+25% enemy dmg taken · <span class="text-blue-400">Gen 5 · same as Chenko</span></td></tr>
+									<tr class="bg-yellow-950/15 hover:bg-yellow-950/25 transition-colors"><td class="px-3 py-2.5 font-bold text-yellow-300">Amane</td><td class="px-3 py-2.5 text-center text-gray-400">DamageUp</td><td class="px-3 py-2.5 text-center text-yellow-400 font-mono font-bold">102</td><td class="px-3 py-2.5 text-gray-400">+25% Attack · <span class="text-yellow-400">Multiplicative vs 101</span></td></tr>
+									<tr class="bg-yellow-950/15 hover:bg-yellow-950/25 transition-colors"><td class="px-3 py-2.5 font-bold text-yellow-300">Margot</td><td class="px-3 py-2.5 text-center text-gray-400">DamageUp</td><td class="px-3 py-2.5 text-center text-yellow-400 font-mono font-bold">102</td><td class="px-3 py-2.5 text-gray-400">+25% Attack · Gen 4+ A-tier</td></tr>
+									<tr class="bg-yellow-950/15 hover:bg-yellow-950/25 transition-colors"><td class="px-3 py-2.5 font-bold text-yellow-300">Hilde</td><td class="px-3 py-2.5 text-center text-gray-400">DamageUp</td><td class="px-3 py-2.5 text-center text-yellow-400 font-mono font-bold">102</td><td class="px-3 py-2.5 text-gray-400">+15% Attack · Reliable non-chance</td></tr>
+									<tr class="hover:bg-white/[0.02] transition-colors"><td class="px-3 py-2.5 text-gray-600">Howard / Quinn</td><td class="px-3 py-2.5 text-center text-gray-700">DefenseUp</td><td class="px-3 py-2.5 text-center text-gray-700 font-mono">111</td><td class="px-3 py-2.5 text-red-500/70 text-xs">Bear Hunt: useless — defensive</td></tr>
+									<tr class="bg-white/[0.01] hover:bg-white/[0.02] transition-colors"><td class="px-3 py-2.5 text-gray-600">Gordon</td><td class="px-3 py-2.5 text-center text-gray-700">DefenseUp</td><td class="px-3 py-2.5 text-center text-gray-700 font-mono">113</td><td class="px-3 py-2.5 text-red-500/70 text-xs">Bear Hunt: useless — defensive</td></tr>
+									<tr class="hover:bg-white/[0.02] transition-colors"><td class="px-3 py-2.5 text-gray-600">Jabel / Eric</td><td class="px-3 py-2.5 text-center text-gray-700">OppDamageDown</td><td class="px-3 py-2.5 text-center text-gray-700 font-mono">201/202</td><td class="px-3 py-2.5 text-red-500/70 text-xs">Bear Hunt: useless — defensive</td></tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="bg-black/60 ring-1 ring-white/[0.07] rounded-xl p-4">
+							<p class="text-[10px] font-black text-cyan-400 uppercase tracking-[0.15em] mb-3">Same ID = Additive · Different ID = Multiplicative (+12.5% extra)</p>
+							<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+								<div class="bg-black/50 rounded-xl p-3 ring-1 ring-red-900/30">
+									<p class="font-black text-red-400 mb-2">4× Chenko (all ID 101)</p>
+									<p class="font-mono text-[10px] text-gray-500">DamageUp[101] = 100</p>
+									<p class="font-mono text-[10px] text-gray-500 mt-1">= 1 + 100/100 = <strong class="text-red-300">2.0</strong></p>
+									<p class="text-gray-500 mt-1.5 text-[10px]">Boost: 100%</p>
+								</div>
+								<div class="bg-green-950/20 rounded-xl p-3 ring-1 ring-green-700/30">
+									<p class="font-black text-green-400 mb-2">2 Chenko + 2 Amane ✅</p>
+									<p class="font-mono text-[10px] text-gray-400">DamageUp[101] = 50 → ×1.5</p>
+									<p class="font-mono text-[10px] text-gray-400 mt-1">DamageUp[102] = 50 → ×1.5</p>
+									<p class="font-mono text-[10px] text-green-300 mt-1">1.5 × 1.5 = <strong>2.25</strong></p>
+									<p class="text-green-400 font-bold mt-1.5 text-[10px]">Boost: 125% (+12.5%!)</p>
+								</div>
+								<div class="bg-blue-950/20 rounded-xl p-3 ring-1 ring-blue-700/30">
+									<p class="font-black text-blue-400 mb-2">3 Chenko + 1 Amane</p>
+									<p class="font-mono text-[10px] text-gray-400">DamageUp[101] = 75 → ×1.75</p>
+									<p class="font-mono text-[10px] text-gray-400 mt-1">DamageUp[102] = 25 → ×1.25</p>
+									<p class="font-mono text-[10px] text-blue-300 mt-1">1.75 × 1.25 = <strong>2.1875</strong></p>
+									<p class="text-blue-300 mt-1.5 text-[10px]">Boost: 118.75%</p>
+								</div>
+							</div>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-green-950/35 border-l-[3px] border-l-green-500/60 ring-1 ring-green-900/30 text-green-300">
+							<i data-feather="star" class="w-4 h-4 mt-0.5 shrink-0 text-green-400"></i>
+							<div><p><strong class="text-green-200">Optimal Bear Hunt Joiner Combo: 2 Chenko + 2 Amane = 2.25 (best possible)</strong></p><p class="mt-1 text-green-500 text-xs">+12.5% more than 4 Chenko. If you only have 1 Amane: 3 Chenko + 1 Amane = 2.1875 — still beats 4 Chenko. Margot (ID:102) also stacks well with Chenko at Gen 4+. Effectiveness order: 2+2 Chenko/Amane &gt; 3+1 Chenko/Amane &gt; 4 Chenko &gt; 3 Chenko+1 Hilde.</p></div>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-amber-950/35 border-l-[3px] border-l-amber-500/60 ring-1 ring-amber-900/30 text-amber-300">
+							<i data-feather="scissors" class="w-4 h-4 mt-0.5 shrink-0 text-amber-400"></i>
+							<span><strong class="text-amber-200">Don't waste time equipping gear on joiner heroes.</strong> Hero gear, equipment stats, and hero star level have zero effect on joiner skill value. The only things that matter are the <strong class="text-amber-100">first expedition skill level (max to 5)</strong> and <strong class="text-amber-100">which hero you pick</strong>. Chenko at 1★ with Skill Lv5 is identical to Chenko at 5★ as a joiner. <strong class="text-amber-100">Chenko requires at least 4★ to unlock Stand of Arms to Level 5.</strong></span>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article aria-label="Hero Setup by Generation">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-indigo-500/70 bg-gradient-to-r from-indigo-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-indigo-950 ring-1 ring-indigo-600/30 shadow-inner shadow-indigo-900/50"><i data-feather="user" class="w-3.5 h-3.5 text-indigo-400"></i></div>
+						<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Hero Setup — By Generation</h2>
+					</div>
+					<div class="px-4 pt-3 pb-1">
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-amber-950/35 border-l-[3px] border-l-amber-500/60 ring-1 ring-amber-900/30 text-amber-300 mb-3">
+							<i data-feather="alert-triangle" class="w-4 h-4 mt-0.5 shrink-0 text-amber-400"></i>
+							<span>Bear Hunt is an <strong class="text-amber-200">Expedition event</strong> — only Expedition skills work. Conquest skills have zero effect. Rally leaders benefit from all 3 hero skills. Joiners only contribute the <strong class="text-amber-200">1st hero's 1st Expedition skill</strong>. Hero slots 2 and 3 of joiners only add march capacity.</span>
+						</div>
+					</div>
+					<div class="divide-y divide-white/[0.05]">
+						<div>
+							<div class="flex items-center gap-3 px-4 py-2.5 bg-blue-900/30 border-b border-blue-800/20 border-l-[3px] border-l-blue-400/50">
+								<span class="text-blue-200 font-black text-sm">Gen 1</span>
+								<span class="text-blue-400/70 text-xs">· Day 0–40 · Amadeus, Helga, Jabel, Saul, Chenko, Yeonwoo, Amane, Gordon, Howard, Quinn, Fahd</span>
+							</div>
+							<div class="px-4 py-3 grid grid-cols-3 gap-3 text-xs">
+								<div class="font-semibold text-gray-600 uppercase tracking-widest self-center text-[9px]">Role</div>
+								<div class="font-semibold text-gray-500 uppercase tracking-widest text-[9px]">F2P</div>
+								<div class="font-semibold text-gray-500 uppercase tracking-widest text-[9px]">P2W</div>
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium"><i data-feather="star" class="w-3.5 h-3.5"></i>Rally Leader</div>
+								<div class="text-gray-300 font-medium">Howard · Jabel · Quinn</div>
+								<div class="text-gray-300 font-medium">Amadeus · Jabel · Saul <em class="text-gray-600">(Saul &gt; Quinn after 4★)</em></div>
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium col-span-3 pt-1 border-t border-white/[0.05]"><i data-feather="navigation" class="w-3.5 h-3.5"></i>Joiner (1st hero slot)</div>
+								<div class="col-span-3 space-y-1">
+									<p><span class="text-green-400 font-bold">✅ Best:</span> <span class="text-gray-300">Chenko <em class="text-gray-600">(requires ≥4★)</em> · Amadeus · Yeonwoo <em class="text-gray-600">(ID:101 — +25% Lethality)</em></span></p>
+									<p><span class="text-yellow-400 font-bold">⚡ Mix:</span> <span class="text-gray-400">Amane <em class="text-gray-600">(ID:102 — +12.5% bonus when mixed with Chenko/Amadeus/Yeonwoo)</em></span></p>
+									<p><span class="text-red-400 font-bold">❌ Never:</span> <span class="text-gray-500">Jabel, Howard, Quinn, Fahd — defensive/economy skills actively displace better joiners</span></p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="flex items-center gap-3 px-4 py-2.5 bg-green-900/25 border-b border-green-800/20 border-l-[3px] border-l-green-400/50">
+								<span class="text-green-200 font-black text-sm">Gen 2</span>
+								<span class="text-green-400/70 text-xs">· ~Day 40 · Adds Zoe, Hilde, Marlin</span>
+							</div>
+							<div class="px-4 py-3 grid grid-cols-3 gap-3 text-xs">
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium"><i data-feather="star" class="w-3.5 h-3.5"></i>Rally Leader</div>
+								<div class="text-gray-300 font-medium">Jabel · Quinn · Zoe <em class="text-gray-600">(F2P: Zoe &gt; Howard at Gen 2)</em></div>
+								<div class="text-gray-300 font-medium">Amadeus · Hilde · Marlin <em class="text-gray-600">(Helga if Amadeus joins)</em></div>
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium col-span-3 pt-1 border-t border-white/[0.05]"><i data-feather="navigation" class="w-3.5 h-3.5"></i>Joiner</div>
+								<div class="col-span-3 space-y-1">
+									<p><span class="text-green-400 font-bold">✅ Best:</span> <span class="text-gray-300">Chenko · Amadeus · Yeonwoo <em class="text-gray-600">(ID:101)</em> + Amane <em class="text-gray-600">(ID:102 — mix for +12.5%)</em></span></p>
+									<p><span class="text-yellow-400 font-bold">⚡ Good:</span> <span class="text-gray-400">Hilde <em class="text-gray-600">(ID:102 — reliable, +15% non-chance)</em></span></p>
+									<p><span class="text-orange-400 font-bold">⚠ Max 1:</span> <span class="text-gray-400">Marlin <em class="text-gray-600">(chance-based — stacking multiples does nothing)</em></span></p>
+									<p><span class="text-red-400 font-bold">❌ Never:</span> <span class="text-gray-500">Jabel, Zoe — Zoe has a defender widget, useless for offense</span></p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="flex items-center gap-3 px-4 py-2.5 bg-purple-900/25 border-b border-purple-800/20 border-l-[3px] border-l-purple-400/50">
+								<span class="text-purple-200 font-black text-sm">Gen 3</span>
+								<span class="text-purple-400/70 text-xs">· ~Day 120 · Adds Petra, Eric, Jaeger</span>
+							</div>
+							<div class="px-4 py-3 grid grid-cols-3 gap-3 text-xs">
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium"><i data-feather="star" class="w-3.5 h-3.5"></i>Rally Leader</div>
+								<div class="text-gray-300 font-medium">Helga · Eric · Saul</div>
+								<div class="text-gray-300 font-medium">Amadeus · Petra · Marlin <em class="text-gray-600">(Marlin widget &gt; Jaeger)</em></div>
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium col-span-3 pt-1 border-t border-white/[0.05]"><i data-feather="navigation" class="w-3.5 h-3.5"></i>Joiner</div>
+								<div class="col-span-3 space-y-1">
+									<p><span class="text-green-400 font-bold">✅ Best:</span> <span class="text-gray-300">Chenko · Amadeus · Yeonwoo <em class="text-gray-600">(ID:101)</em> + Amane <em class="text-gray-600">(ID:102)</em></span></p>
+									<p><span class="text-yellow-400 font-bold">⚡ Good:</span> <span class="text-gray-400">Hilde <em class="text-gray-600">(ID:102)</em></span></p>
+									<p><span class="text-orange-400 font-bold">⚠ Max 1:</span> <span class="text-gray-400">Petra, Jaeger, Marlin <em class="text-gray-600">(all chance-based — never stack)</em></span></p>
+									<p><span class="text-red-400 font-bold">❌ Never:</span> <span class="text-gray-500">Eric, Jabel — defender skills waste a joiner slot</span></p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="flex items-center gap-3 px-4 py-2.5 bg-orange-900/25 border-b border-orange-800/20 border-l-[3px] border-l-orange-400/50">
+								<span class="text-orange-200 font-black text-sm">Gen 4</span>
+								<span class="text-orange-400/70 text-xs">· ~Day 200 · Adds Rosa, Alcar, Margot</span>
+							</div>
+							<div class="px-4 py-3 grid grid-cols-3 gap-3 text-xs">
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium"><i data-feather="star" class="w-3.5 h-3.5"></i>Rally Leader</div>
+								<div class="text-gray-300 font-medium">Helga · Alcar · Saul</div>
+								<div class="text-gray-300 font-medium">Amadeus · Petra · Rosa <em class="text-gray-600">(Alcar if Ama &lt;3.5★)</em></div>
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium col-span-3 pt-1 border-t border-white/[0.05]"><i data-feather="navigation" class="w-3.5 h-3.5"></i>Joiner</div>
+								<div class="col-span-3 space-y-1">
+									<p><span class="text-green-400 font-bold">✅ Best:</span> <span class="text-gray-300">Chenko · Yeonwoo <em class="text-gray-600">(ID:101)</em> + Amane · Margot <em class="text-gray-600">(ID:102 — Margot joins A-tier at Gen 4)</em></span></p>
+									<p><span class="text-yellow-400 font-bold">⚡ Good:</span> <span class="text-gray-400">Hilde <em class="text-gray-600">(ID:102)</em></span></p>
+									<p><span class="text-orange-400 font-bold">⚠ Max 1:</span> <span class="text-gray-400">Rosa, Alcar, Petra <em class="text-gray-600">(chance-based)</em></span></p>
+									<p><span class="text-red-400 font-bold">❌ Never:</span> <span class="text-gray-500">Alcar as joiner (defender skill), Jabel, Zoe, Eric</span></p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="flex items-center gap-3 px-4 py-2.5 bg-red-900/25 border-b border-red-800/20 border-l-[3px] border-l-red-400/50">
+								<span class="text-red-200 font-black text-sm">Gen 5</span>
+								<span class="text-red-400/70 text-xs">· ~Day 280 · Adds Long Fei, Thrud, Vivian</span>
+							</div>
+							<div class="px-4 py-3 grid grid-cols-3 gap-3 text-xs">
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium"><i data-feather="star" class="w-3.5 h-3.5"></i>Rally Leader</div>
+								<div class="text-gray-300 font-medium">Helga · Alcar or Vivian · Saul</div>
+								<div class="text-gray-300 font-medium">Amadeus · Thrud · Alcar <em class="text-gray-600">(Long Fei ❌ Bear Hunt)</em></div>
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium col-span-3 pt-1 border-t border-white/[0.05]"><i data-feather="navigation" class="w-3.5 h-3.5"></i>Joiner</div>
+								<div class="col-span-3 space-y-1">
+									<p><span class="text-green-400 font-bold">✅ Best (ID:101 — pick 2):</span> <span class="text-gray-300">Chenko · Yeonwoo · Vivian <em class="text-gray-600">(all ID:101 — +25% Lethality · choose any 2)</em></span></p>
+									<p><span class="text-yellow-400 font-bold">⚡ Mix (ID:102 — pick 2):</span> <span class="text-gray-400">Amane · Margot <em class="text-gray-600">(ID:102 — mix with 2× ID:101 for multiplicative +12.5%)</em></span></p>
+									<p><span class="text-blue-400 font-bold">⭐ Good:</span> <span class="text-gray-400">Thrud <em class="text-gray-600">(Archer+Infantry only, non-chance, underrated)</em> · Hilde <em class="text-gray-600">(ID:102)</em></span></p>
+									<p><span class="text-orange-400 font-bold">⚠ Note:</span> <span class="text-gray-500">Vivian is ID:101 — do NOT pair with 2× Chenko/Yeonwoo as joiner. That is additive. She is best as your 3rd ID:101 pick when you lack Amane/Margot.</span></p>
+									<p><span class="text-red-400 font-bold">❌ Never:</span> <span class="text-gray-500">Long Fei — 2 defensive skills, 1 offensive. Worse than Gen 1 heroes for Bear Hunt.</span></p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="flex items-center gap-3 px-4 py-2.5 bg-pink-900/25 border-b border-pink-800/20 border-l-[3px] border-l-pink-400/50">
+								<span class="text-pink-200 font-black text-sm">Gen 6</span>
+								<span class="text-pink-400/70 text-xs">· ~Day 350–360 · Yang, Triton, Sophia · Released Feb 16, 2026</span>
+								<span class="text-[8px] bg-pink-950/80 text-pink-300 ring-1 ring-pink-700/50 px-2 py-0.5 rounded-full font-black uppercase tracking-widest animate-pulse ml-auto">NEW</span>
+							</div>
+							<div class="px-4 py-3 grid grid-cols-3 gap-3 text-xs">
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium"><i data-feather="star" class="w-3.5 h-3.5"></i>Rally Leader</div>
+								<div class="text-gray-300 font-medium">Jabel · Yang · Saul <em class="text-gray-600">(Yang replaces Alcar)</em></div>
+								<div class="text-gray-300 font-medium">Amadeus · Yang · Thrud <em class="text-gray-600">(Helga if Amadeus joins)</em></div>
+								<div class="flex items-center gap-1.5 text-gray-500 font-medium col-span-3 pt-1 border-t border-white/[0.05]"><i data-feather="navigation" class="w-3.5 h-3.5"></i>Joiner</div>
+								<div class="col-span-3 space-y-1">
+									<p><span class="text-green-400 font-bold">✅ Best (ID:101):</span> <span class="text-gray-300">Chenko · Yeonwoo · Vivian <em class="text-gray-600">(pick 2)</em></span></p>
+									<p><span class="text-yellow-400 font-bold">⚡ Mix (ID:102):</span> <span class="text-gray-400">Amane · Margot <em class="text-gray-600">(mix with 2× ID:101 for multiplicative boost)</em></span></p>
+									<p><span class="text-pink-400 font-bold">🆕 Yang:</span> <span class="text-gray-300">Rally Squad Lethality buff — <strong class="text-gray-200">only Gen 6 hero with a direct offense buff in Expedition.</strong> Use as Rally Leader hero slot 2 or 3. F2P-friendly — shards available from standard gameplay events.</span></p>
+									<p><span class="text-gray-500 font-medium">Triton:</span> <span class="text-gray-500">Squad Defense +25% — zero value in Bear Hunt offense.</span></p>
+									<p><span class="text-gray-500 font-medium">Sophia:</span> <span class="text-gray-500">Cavalry-focused defender — not relevant for Bear Hunt.</span></p>
+									<p><span class="text-red-400 font-bold">❌ Never:</span> <span class="text-gray-500">Long Fei, Triton, Sophia as joiners</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="px-4 py-4 space-y-3 border-t border-white/[0.05]">
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-red-950/35 border-l-[3px] border-l-red-500/60 ring-1 ring-red-900/30 text-red-300">
+							<i data-feather="star" class="w-4 h-4 mt-0.5 shrink-0 text-red-400"></i>
+							<span><strong class="text-red-200">Amadeus: Lead or Join?</strong> If Helga is already 4–5★ with a solid widget, let Helga host the main rally and use Amadeus to join multiple other rallies throughout the 30 minutes. His Lethality skill spread across many rallies usually outperforms him sitting in one rally all event. If no one else can host at a competitive level, Amadeus leads — no debate.</span>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-blue-950/35 border-l-[3px] border-l-blue-500/60 ring-1 ring-blue-900/30 text-blue-300">
+							<i data-feather="navigation" class="w-4 h-4 mt-0.5 shrink-0 text-blue-400"></i>
+							<span><strong class="text-blue-200">Secondary marches + Diana/Fahd trick:</strong> Use Chenko/Amadeus on secondary marches to join different rallies simultaneously. Place <strong class="text-blue-100">Diana or Fahd in hero slot 2–3 of your joiner formation</strong> — their march speed buff activates on return, speeding up your cycle to the next rally.</span>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article aria-label="P2W Rally Leader Deep Dive">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-rose-500/70 bg-gradient-to-r from-rose-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-rose-950 ring-1 ring-rose-600/30 shadow-inner shadow-rose-900/50"><i data-feather="dollar-sign" class="w-3.5 h-3.5 text-rose-400"></i></div>
+						<div>
+							<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">P2W Rally Leader — Deep Dive</h2>
+							<p class="text-[9px] text-gray-600 mt-0.5 uppercase tracking-widest">Best lineup per generation · Alternatives · Widget logic</p>
+						</div>
+					</div>
+					<div class="px-5 pt-5 pb-3 space-y-3">
+						<p class="text-sm text-gray-500 leading-relaxed">Rally leaders gain the most from <strong class="text-gray-300">Mythic (Gold) heroes</strong> because Widgets only activate from the leader slot and are multiplicative.</p>
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+							<div class="bg-yellow-950/25 border-l-[3px] border-l-yellow-500/50 ring-1 ring-yellow-800/25 rounded-xl p-4">
+								<p class="text-[10px] font-black text-yellow-400 uppercase tracking-wider mb-2">⚡ Widget Only Activates from Leader</p>
+								<p class="text-xs text-gray-400 leading-relaxed">Mythic heroes in slot 2–3 — yours or a joiner's — do not activate their widgets. Helga in slot 2 while Amadeus leads = Helga's Lethality Widget <strong class="text-red-300">never fires</strong>. She only contributes her expedition skills — the same value as any Epic hero.</p>
+							</div>
+							<div class="bg-red-950/30 border-l-[3px] border-l-red-500/50 ring-1 ring-red-900/25 rounded-xl p-4">
+								<p class="text-[10px] font-black text-red-400 uppercase tracking-wider mb-2">🚫 Why Not Amadeus · Helga · Saul?</p>
+								<p class="text-xs text-gray-400 leading-relaxed">Helga's Widget is inactive in slot 2–3. You gain nothing compared to having Jabel in that slot — and you lose the option for Helga to lead a separate rally with her Widget fully active.</p>
+							</div>
+						</div>
+						<p class="text-[9px] font-black text-gray-600 uppercase tracking-[0.2em] pt-1">Quick Reference — P2W Rally Leader Per Generation</p>
+						<div class="overflow-x-auto rounded-xl ring-1 ring-white/[0.07]">
+							<table class="w-full text-xs">
+								<thead><tr class="bg-black/60 border-b border-white/[0.07]">
+									<th class="px-3 py-3 text-left text-[9px] font-black text-gray-500 uppercase tracking-widest">Gen</th>
+									<th class="px-3 py-3 text-left text-[9px] font-black text-green-400/80 uppercase tracking-widest">Best</th>
+									<th class="px-3 py-3 text-left text-[9px] font-black text-blue-400/80 uppercase tracking-widest">Alternative</th>
+									<th class="px-3 py-3 text-left text-[9px] font-black text-gray-500 uppercase tracking-widest">Note</th>
+								</tr></thead>
+								<tbody class="divide-y divide-white/[0.05]">
+									<tr class="hover:bg-white/[0.025] transition-colors"><td class="px-3 py-2.5 font-bold text-blue-400">Gen 1</td><td class="px-3 py-2.5 text-gray-200 font-semibold">Amadeus · Jabel · Saul</td><td class="px-3 py-2.5 text-gray-400">Helga · Jabel · Saul</td><td class="px-3 py-2.5 text-gray-500">Alt when Amadeus is joining other rallies</td></tr>
+									<tr class="bg-white/[0.015] hover:bg-white/[0.03] transition-colors"><td class="px-3 py-2.5 font-bold text-green-400">Gen 2</td><td class="px-3 py-2.5 text-gray-200 font-semibold">Amadeus · Hilde · Marlin</td><td class="px-3 py-2.5 text-gray-400">Helga · Hilde · Marlin</td><td class="px-3 py-2.5 text-gray-500">Marlin has attack widget for rally</td></tr>
+									<tr class="hover:bg-white/[0.025] transition-colors"><td class="px-3 py-2.5 font-bold text-purple-400">Gen 3</td><td class="px-3 py-2.5 text-gray-200 font-semibold">Amadeus · Petra · Marlin</td><td class="px-3 py-2.5 text-gray-400">Helga · Petra · Marlin</td><td class="px-3 py-2.5 text-gray-500">Marlin &gt; Jaeger due to rally widget</td></tr>
+									<tr class="bg-white/[0.015] hover:bg-white/[0.03] transition-colors"><td class="px-3 py-2.5 font-bold text-orange-400">Gen 4</td><td class="px-3 py-2.5 text-gray-200 font-semibold">Amadeus · Petra · Rosa</td><td class="px-3 py-2.5 text-gray-400">Alcar · Petra · Rosa*</td><td class="px-3 py-2.5 text-amber-400 text-[10px]">*Only if Ama ≤3.5★ &amp; Alcar ≥4.5★</td></tr>
+									<tr class="hover:bg-white/[0.025] transition-colors"><td class="px-3 py-2.5 font-bold text-red-400">Gen 5</td><td class="px-3 py-2.5 text-gray-200 font-semibold">Amadeus · Thrud · Alcar</td><td class="px-3 py-2.5 text-gray-400">Helga · Thrud · Alcar</td><td class="px-3 py-2.5 text-red-400">Long Fei ❌ Bear Hunt</td></tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-indigo-950/35 border-l-[3px] border-l-indigo-500/60 ring-1 ring-indigo-900/30 text-indigo-300">
+							<i data-feather="zap" class="w-4 h-4 mt-0.5 shrink-0 text-indigo-400"></i>
+							<span><strong class="text-indigo-200">Optimal P2W Strategy:</strong> <strong class="text-indigo-100">Helga leads 1 rally</strong> while <strong class="text-indigo-100">Amadeus joins multiple rallies</strong> throughout the 30 minutes. Both widgets fire on different rallies simultaneously. Long Fei is better than Amadeus for general PvP — but specifically for Bear Hunt, Amadeus wins: 3 damage skills vs Long Fei's 1.</span>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article aria-label="Strategy by Player Type">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-emerald-500/70 bg-gradient-to-r from-emerald-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-emerald-950 ring-1 ring-emerald-600/30 shadow-inner shadow-emerald-900/50"><i data-feather="users" class="w-3.5 h-3.5 text-emerald-400"></i></div>
+						<div class="flex items-center gap-2.5">
+							<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Strategy by Player Type</h2>
+							<span class="text-[8px] bg-red-950/80 text-red-300 ring-1 ring-red-700/50 px-2 py-0.5 rounded-full font-black uppercase tracking-widest animate-pulse">NEW</span>
+						</div>
+					</div>
+					<div class="divide-y divide-white/[0.05]">
+						<div class="px-5 py-4 space-y-2">
+							<div class="flex items-center gap-2.5 mb-2">
+								<span class="text-[9px] bg-blue-950/70 text-blue-300 ring-1 ring-blue-700/40 px-3 py-1 rounded-full font-black uppercase tracking-widest">F2P</span>
+								<p class="text-xs text-gray-500">Focus on consistency and best return on investment</p>
+							</div>
+							<div class="space-y-1.5 text-xs">
+								<p class="flex items-start gap-2.5"><span class="text-blue-400 font-black shrink-0 mt-0.5 w-4 text-center">1.</span><span class="text-gray-400"><strong class="text-gray-200">Intel Missions every single day without exception.</strong> Your 24 arrows have more impact on total alliance damage than they appear to individually.</span></p>
+								<p class="flex items-start gap-2.5"><span class="text-blue-400 font-black shrink-0 mt-0.5 w-4 text-center">2.</span><span class="text-gray-400"><strong class="text-gray-200">Don't host unless you're genuinely top 10–15 by power.</strong> Hosting before you're ready wastes the contribution of 15 joiners.</span></p>
+								<p class="flex items-start gap-2.5"><span class="text-blue-400 font-black shrink-0 mt-0.5 w-4 text-center">3.</span><span class="text-gray-400"><strong class="text-gray-200">Save shard pulls for Chenko.</strong> Best F2P joiner ROI in this event. Needs ≥4★ to max the skill to Level 5.</span></p>
+								<p class="flex items-start gap-2.5"><span class="text-blue-400 font-black shrink-0 mt-0.5 w-4 text-center">4.</span><span class="text-gray-400"><strong class="text-gray-200">No leveled S-tier joiner? Send zero heroes.</strong> Not Jabel. Zero. Your troops still contribute fully.</span></p>
+								<p class="flex items-start gap-2.5"><span class="text-blue-400 font-black shrink-0 mt-0.5 w-4 text-center">5.</span><span class="text-gray-400"><strong class="text-gray-200">Save your formation as a preset.</strong> One-tap joining before a rally fills is more important than you'd think in 30 minutes.</span></p>
+							</div>
+						</div>
+						<div class="px-5 py-4 space-y-2">
+							<div class="flex items-center gap-2.5 mb-2">
+								<span class="text-[9px] bg-green-950/70 text-green-300 ring-1 ring-green-700/40 px-3 py-1 rounded-full font-black uppercase tracking-widest">Low Spender</span>
+								<p class="text-xs text-gray-500">Maximize value from small investments</p>
+							</div>
+							<div class="space-y-1.5 text-xs">
+								<p class="flex items-start gap-2.5"><span class="text-green-400 font-black shrink-0 mt-0.5 w-4 text-center">1.</span><span class="text-gray-400">Prioritize Governor Gear (goggles for Lethality) before any hero gear — Bear Hunt returns are far larger.</span></p>
+								<p class="flex items-start gap-2.5"><span class="text-green-400 font-black shrink-0 mt-0.5 w-4 text-center">2.</span><span class="text-gray-400">Upgrade Chenko to ≥4★ to unlock the best joiner skill in the game. Most cost-efficient investment available.</span></p>
+								<p class="flex items-start gap-2.5"><span class="text-green-400 font-black shrink-0 mt-0.5 w-4 text-center">3.</span><span class="text-gray-400">Join the strongest rally available, not the closest. Personal damage uses leader stats — one powerful rally = more points with the same troops.</span></p>
+								<p class="flex items-start gap-2.5"><span class="text-green-400 font-black shrink-0 mt-0.5 w-4 text-center">4.</span><span class="text-gray-400">Use Diana/Fahd in slots 2–3 of your joiner formation to speed up march return — more rallies joinable in 30 minutes.</span></p>
+							</div>
+						</div>
+						<div class="px-5 py-4 space-y-2">
+							<div class="flex items-center gap-2.5 mb-2">
+								<span class="text-[9px] bg-red-950/70 text-red-300 ring-1 ring-red-700/40 px-3 py-1 rounded-full font-black uppercase tracking-widest">Whale / Host</span>
+								<p class="text-xs text-gray-500">Responsible for the entire alliance</p>
+							</div>
+							<div class="space-y-1.5 text-xs">
+								<p class="flex items-start gap-2.5"><span class="text-red-400 font-black shrink-0 mt-0.5 w-4 text-center">1.</span><span class="text-gray-400">Activate ALL buffs before launching — pets, consumables, cosmetics. All apply to the entire rally. Sloppy setup harms every joiner.</span></p>
+								<p class="flex items-start gap-2.5"><span class="text-red-400 font-black shrink-0 mt-0.5 w-4 text-center">2.</span><span class="text-gray-400">Hold the rally 10–15 seconds so S-tier joiners from elite players can fill in before opening to everyone.</span></p>
+								<p class="flex items-start gap-2.5"><span class="text-red-400 font-black shrink-0 mt-0.5 w-4 text-center">3.</span><span class="text-gray-400">Actively monitor the yellow flag — kick joiners with defensive heroes and explain in chat. Education beats a silent kick.</span></p>
+								<p class="flex items-start gap-2.5"><span class="text-red-400 font-black shrink-0 mt-0.5 w-4 text-center">4.</span><span class="text-gray-400">If Helga is maxed, use Helga as leader and Amadeus as a mobile joiner — total damage contribution will be higher.</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article aria-label="30-Minute Event Timeline">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-orange-500/70 bg-gradient-to-r from-orange-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-orange-950 ring-1 ring-orange-600/30 shadow-inner shadow-orange-900/50"><i data-feather="clock" class="w-3.5 h-3.5 text-orange-400"></i></div>
+						<div class="flex items-center gap-2.5">
+							<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">30-Minute Event Timeline</h2>
+							<span class="text-[8px] bg-red-950/80 text-red-300 ring-1 ring-red-700/50 px-2 py-0.5 rounded-full font-black uppercase tracking-widest animate-pulse">NEW</span>
+						</div>
+					</div>
+					<div class="px-5 py-4 space-y-3">
+						<p class="text-sm text-gray-500 leading-relaxed">This timeline coordination separates alliances that consistently hit 1.2B from those stuck at 800–900M.</p>
+						<div class="overflow-x-auto rounded-xl ring-1 ring-white/[0.07]">
+							<table class="w-full text-xs">
+								<thead><tr class="bg-black/60 border-b border-white/[0.07]">
+									<th class="px-3 py-3 text-left text-[9px] font-black text-gray-500 uppercase tracking-widest">Phase</th>
+									<th class="px-3 py-3 text-left text-[9px] font-black text-orange-400/80 uppercase tracking-widest">Time</th>
+									<th class="px-3 py-3 text-left text-[9px] font-black text-gray-500 uppercase tracking-widest">What to Do</th>
+								</tr></thead>
+								<tbody class="divide-y divide-white/[0.05]">
+									<tr class="bg-teal-950/15 hover:bg-teal-950/25 transition-colors"><td class="px-3 py-2.5 font-bold text-teal-400">Pre-Hunt</td><td class="px-3 py-2.5 text-teal-300 font-mono">−5 min</td><td class="px-3 py-2.5 text-gray-400">Recall troops, activate pets, equip Lethality gear, confirm formation preset, hosts teleport to Pitfall</td></tr>
+									<tr class="bg-green-950/15 hover:bg-green-950/25 transition-colors"><td class="px-3 py-2.5 font-bold text-green-400">Opening</td><td class="px-3 py-2.5 text-green-300 font-mono">0–5 min</td><td class="px-3 py-2.5 text-gray-400">Top hosts launch rallies immediately. Elite joiners fill first (hold 10–15 sec for S-tier players). Strong players join the strongest host's rally.</td></tr>
+									<tr class="bg-blue-950/15 hover:bg-blue-950/25 transition-colors"><td class="px-3 py-2.5 font-bold text-blue-400">Mid-Hunt</td><td class="px-3 py-2.5 text-blue-300 font-mono">5–23 min</td><td class="px-3 py-2.5 text-gray-400">Continuous cycling — troops return, immediately rejoin the next rally. Monitor yellow flag. Kick wrong-hero joiners. R4/R5 stagger rally openings so joiners don't spread thin.</td></tr>
+									<tr class="bg-red-950/25 hover:bg-red-950/35 transition-colors border-l-[3px] border-l-red-500/50"><td class="px-3 py-2.5 font-bold text-red-400">Final Push ⚡</td><td class="px-3 py-2.5 text-red-300 font-mono">23–30 min</td><td class="px-3 py-2.5 text-red-300 font-medium">ALL members open rallies — including weak ones. Not because their rally is powerful, but because it creates slots for strong players whose troops just returned.</td></tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-red-950/35 border-l-[3px] border-l-red-500/70 ring-1 ring-red-900/30 text-red-300">
+							<i data-feather="zap" class="w-4 h-4 mt-0.5 shrink-0 text-red-400"></i>
+							<span><strong class="text-red-200">The Final Push is the most consistently abandoned tactic.</strong> In the last 5–7 minutes, every member — even the weakest — must open a rally. More open rallies in the final minutes = more attacks before the timer ends = more total alliance damage. Simple, but most alliances leave this on the table every event.</span>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article aria-label="Rally Leader Responsibilities">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-orange-500/70 bg-gradient-to-r from-orange-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-orange-950 ring-1 ring-orange-600/30 shadow-inner shadow-orange-900/50"><i data-feather="shield" class="w-3.5 h-3.5 text-orange-400"></i></div>
+						<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Rally Leader Responsibilities</h2>
+					</div>
+					<div class="px-5 py-4 space-y-2">
+						<p class="text-sm text-gray-500 leading-relaxed mb-3">Being a rally leader isn't just about picking the right heroes. Leaders have active responsibilities that directly impact every member's damage.</p>
+						<div class="space-y-2">
+							<div class="flex items-start gap-3.5 bg-green-950/20 ring-1 ring-green-800/25 rounded-xl px-4 py-3">
+								<span class="w-6 h-6 rounded-full bg-green-500/20 ring-1 ring-green-500/50 text-green-300 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">1</span>
+								<div class="text-xs"><p class="font-bold text-green-300 mb-0.5">Activate ALL buffs before launching</p><p class="text-gray-400">Pets, consumable combat buffs, cosmetic bonuses (skins, frames, island decorations) — all apply to the entire rally. Careless buff activation hurts every joiner.</p></div>
+							</div>
+							<div class="flex items-start gap-3.5 bg-blue-950/20 ring-1 ring-blue-800/25 rounded-xl px-4 py-3">
+								<span class="w-6 h-6 rounded-full bg-blue-500/20 ring-1 ring-blue-500/50 text-blue-300 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">2</span>
+								<div class="text-xs"><p class="font-bold text-blue-300 mb-0.5">Monitor yellow flag — kick bad joiners &amp; educate</p><p class="text-gray-400">If a member joins with Jabel/Howard/Gordon in slot 1, <strong class="text-gray-200">kick them and explain in chat</strong>. A Level 5 defensive skill displaces Chenko at Level 4. 10 seconds of education beats a silent kick — it builds a better alliance culture long-term.</p></div>
+							</div>
+							<div class="flex items-start gap-3.5 bg-amber-950/20 ring-1 ring-amber-800/25 rounded-xl px-4 py-3">
+								<span class="w-6 h-6 rounded-full bg-amber-500/20 ring-1 ring-amber-500/50 text-amber-300 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">3</span>
+								<div class="text-xs"><p class="font-bold text-amber-300 mb-0.5">Teleport near the Pitfall before the event</p><p class="text-gray-400">March time = wasted event time. A rally with a 2-minute march that hits the bear 10× beats a 6-minute march rally that only hits 5×. Leaders must cluster near the Pitfall so joiners can find them easily.</p></div>
+							</div>
+							<div class="flex items-start gap-3.5 bg-purple-950/20 ring-1 ring-purple-800/25 rounded-xl px-4 py-3">
+								<span class="w-6 h-6 rounded-full bg-purple-500/20 ring-1 ring-purple-500/50 text-purple-300 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">4</span>
+								<div class="text-xs">
+									<p class="font-bold text-purple-300 mb-0.5">Calculate &amp; announce troop cap per joiner</p>
+									<div class="bg-black/60 ring-1 ring-white/[0.06] rounded-lg px-3 py-2 mt-1.5 font-mono text-[10px] space-y-0.5">
+										<p class="text-gray-600">1. Strongest host Rally Capacity (e.g. 1,132,210)</p>
+										<p class="text-gray-600">2. Subtract host Squad Capacity (e.g. 162,210)</p>
+										<p class="text-gray-600">3. Available joiner space = 970,000</p>
+										<p class="text-gray-600">4. Divide by 14 joiner slots = ~69,285</p>
+										<p class="text-green-400 font-bold">5. Cap per joiner = 69,000 troops</p>
+									</div>
+									<p class="text-gray-500 mt-1.5">Post this number in chat before the event. Strong players get capped, the rally stays open longer, and all members can participate.</p>
+								</div>
+							</div>
+							<div class="flex items-start gap-3.5 bg-black/30 ring-1 ring-white/[0.06] rounded-xl px-4 py-3">
+								<span class="w-6 h-6 rounded-full bg-gray-600/30 ring-1 ring-gray-500/40 text-gray-300 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">5</span>
+								<div class="text-xs"><p class="font-bold text-gray-300 mb-0.5">Save formation preset before event day</p><p class="text-gray-400">Bear Hunt is not the time to adjust troops manually. A saved preset = join in 10 seconds without errors. Update whenever you change generation or after a major troop upgrade.</p></div>
+							</div>
+							<div class="flex items-start gap-3.5 bg-cyan-950/20 ring-1 ring-cyan-800/25 rounded-xl px-4 py-3">
+								<span class="w-6 h-6 rounded-full bg-cyan-500/20 ring-1 ring-cyan-500/50 text-cyan-300 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">★</span>
+								<div class="text-xs"><p class="font-bold text-cyan-300 mb-0.5">Star / Bookmark Rally Feature</p><p class="text-gray-400">Use the <strong class="text-gray-200">star icon</strong> inside any rally screen to bookmark it. The bookmarked rally always floats to the top of your rally list — no scrolling, no confusion under time pressure. Lets joiners instantly re-join the strongest whale rally the moment their troops return.</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article aria-label="Pitfall Upgrade System">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-green-500/70 bg-gradient-to-r from-green-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-green-950 ring-1 ring-green-600/30 shadow-inner shadow-green-900/50"><i data-feather="trending-up" class="w-3.5 h-3.5 text-green-400"></i></div>
+						<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Pitfall Upgrade System</h2>
+					</div>
+					<div class="px-5 py-4 space-y-3">
+						<p class="text-sm text-gray-500 leading-relaxed">The Pitfall must reach <strong class="text-gray-300">Level 5 before the first rally launches</strong>. The +25% Attack bonus applies to every troop in every rally for the full 30 minutes.</p>
+						<div class="overflow-x-auto rounded-xl ring-1 ring-white/[0.07]">
+							<table class="w-full text-sm">
+								<thead><tr class="bg-black/60 border-b border-white/[0.07]">
+									<th class="px-4 py-3 text-left text-[9px] font-black text-gray-500 uppercase tracking-widest">Level</th>
+									<th class="px-4 py-3 text-center text-[9px] font-black text-gray-500 uppercase tracking-widest">Arrows This Level</th>
+									<th class="px-4 py-3 text-center text-[9px] font-black text-gray-500 uppercase tracking-widest">Total Arrows</th>
+									<th class="px-4 py-3 text-center text-[9px] font-black text-green-400/80 uppercase tracking-widest">Attack Bonus</th>
+								</tr></thead>
+								<tbody class="divide-y divide-white/[0.05]">
+									<tr class="hover:bg-white/[0.025] transition-colors"><td class="px-4 py-2.5 text-gray-400">Level 1</td><td class="px-4 py-2.5 text-center text-gray-400">200</td><td class="px-4 py-2.5 text-center text-gray-400">200</td><td class="px-4 py-2.5 text-center text-green-400 font-semibold">+5%</td></tr>
+									<tr class="bg-white/[0.015] hover:bg-white/[0.03] transition-colors"><td class="px-4 py-2.5 text-gray-400">Level 2</td><td class="px-4 py-2.5 text-center text-gray-400">300</td><td class="px-4 py-2.5 text-center text-gray-400">500</td><td class="px-4 py-2.5 text-center text-green-400 font-semibold">+10%</td></tr>
+									<tr class="hover:bg-white/[0.025] transition-colors"><td class="px-4 py-2.5 text-gray-400">Level 3</td><td class="px-4 py-2.5 text-center text-gray-400">400</td><td class="px-4 py-2.5 text-center text-gray-400">900</td><td class="px-4 py-2.5 text-center text-green-400 font-semibold">+15%</td></tr>
+									<tr class="bg-white/[0.015] hover:bg-white/[0.03] transition-colors"><td class="px-4 py-2.5 text-gray-400">Level 4</td><td class="px-4 py-2.5 text-center text-gray-400">500</td><td class="px-4 py-2.5 text-center text-gray-400">1,400</td><td class="px-4 py-2.5 text-center text-green-400 font-semibold">+20%</td></tr>
+									<tr class="bg-green-950/20 hover:bg-green-950/30 transition-colors border-l-[3px] border-l-green-500/50"><td class="px-4 py-2.5 font-black text-white">Level 5 ★ Max</td><td class="px-4 py-2.5 text-center font-bold text-gray-300">500</td><td class="px-4 py-2.5 text-center font-bold text-gray-300">1,900</td><td class="px-4 py-2.5 text-center text-green-400 font-black text-base">+25%</td></tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="grid grid-cols-2 gap-2 text-xs">
+							<div class="bg-blue-950/25 ring-1 ring-blue-900/40 rounded-xl p-3.5"><p class="font-black text-blue-400 uppercase tracking-wider mb-1.5 text-[9px]">Arrow Math</p><p class="text-gray-400 leading-relaxed">Every member receives <strong class="text-gray-200">24 arrows/day</strong> from Intel Missions. 40 members × 24 × 2 days = <strong class="text-gray-200">1,920 arrows</strong> — enough to max the Pitfall every cycle.</p></div>
+							<div class="bg-red-950/25 ring-1 ring-red-900/40 rounded-xl p-3.5"><p class="font-black text-red-400 uppercase tracking-wider mb-1.5 text-[9px]">Stop at Level 5</p><p class="text-gray-400 leading-relaxed">Extra arrows after Level 5 are <strong class="text-gray-200">not saved</strong> — they're wasted. R4/R5 should announce in chat once the cap is reached.</p></div>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-amber-950/35 border-l-[3px] border-l-amber-500/60 ring-1 ring-amber-900/30 text-amber-300">
+							<i data-feather="alert-circle" class="w-4 h-4 mt-0.5 shrink-0 text-amber-400"></i>
+							<span>Intel Mission completion must be a <strong class="text-amber-200">clear alliance expectation, not a casual suggestion.</strong> One member skipping daily arrows looks small. But with 40 members being inconsistent over 2 days, that gap is the difference between Level 3 and Level 5 Pitfall — a 10–15% damage penalty for the entire alliance before the first rally even launches.</span>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article aria-label="Pets Guide">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-amber-500/70 bg-gradient-to-r from-amber-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-amber-950 ring-1 ring-amber-600/30 shadow-inner shadow-amber-900/50"><i data-feather="feather" class="w-3.5 h-3.5 text-amber-400"></i></div>
+						<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Pets — What Helps, What Doesn't</h2>
+					</div>
+					<div class="px-5 py-4 space-y-2">
+						<p class="text-sm text-gray-500 leading-relaxed mb-1">Activate before the event starts. Pet skills only apply to the <strong class="text-gray-300">rally leader</strong> and cascade to the entire rally's damage. Several popular pets do nothing here.</p>
+						<div class="flex items-start gap-3 bg-green-950/20 ring-1 ring-green-800/25 rounded-xl px-4 py-3"><span class="w-6 h-6 bg-green-500/20 ring-1 ring-green-500/50 text-green-300 rounded-full flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span><div class="text-sm"><p class="font-bold text-green-300">Black Panther — Troop Lethality +10% (2h)</p><p class="text-green-600 text-xs mt-0.5">Best combat pet for this event. Lethality = primary damage stat — this is a direct multiplier for all rally damage.</p></div></div>
+						<div class="flex items-start gap-3 bg-green-950/20 ring-1 ring-green-800/25 rounded-xl px-4 py-3"><span class="w-6 h-6 bg-green-500/20 ring-1 ring-green-500/50 text-green-300 rounded-full flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span><div class="text-sm"><p class="font-bold text-green-300">Mighty Bison — Squad Capacity +15,000 (2h)</p><p class="text-green-600 text-xs mt-0.5">More troops per march = more damage per rally. Critical for rally hosts filling large rallies.</p></div></div>
+						<div class="flex items-start gap-3 bg-green-950/20 ring-1 ring-green-800/25 rounded-xl px-4 py-3"><span class="w-6 h-6 bg-green-500/20 ring-1 ring-green-500/50 text-green-300 rounded-full flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span><div class="text-sm"><p class="font-bold text-green-300">Giant Rhino — All Squad Attack +10% (2h)</p><p class="text-green-600 text-xs mt-0.5">Solid flat attack multiplier. Use if Black Panther is on cooldown.</p></div></div>
+						<div class="flex items-start gap-3 bg-green-950/20 ring-1 ring-green-800/25 rounded-xl px-4 py-3"><span class="w-6 h-6 bg-green-500/20 ring-1 ring-green-500/50 text-green-300 rounded-full flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span><div class="text-sm"><p class="font-bold text-green-300">Moose — Rally Capacity variant (NOT Horror Stare)</p><p class="text-green-600 text-xs mt-0.5">Only the Rally Capacity variant is useful — for bear callers who want to increase how many joiners can enter.</p></div></div>
+						<div class="flex items-start gap-3 bg-red-950/20 ring-1 ring-red-800/25 rounded-xl px-4 py-3"><span class="w-6 h-6 bg-red-500/20 ring-1 ring-red-500/50 text-red-300 rounded-full flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✗</span><div class="text-sm"><p class="font-bold text-red-300">Moose — Horror Stare skill: USELESS in Bear Hunt</p><p class="text-red-600 text-xs mt-0.5">Horror Stare reduces enemy Squad Health. Bear Raging has no Health bar — only Defense. This skill targets a stat the bear doesn't have = zero damage. Possibly the most wasted pet activation in the game. Moose is strong in PvP — but not here.</p></div></div>
+					</div>
+				</div>
+			</article>
+
+			<article aria-label="Critical Rules">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-red-500/80 bg-gradient-to-r from-red-950/50 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-red-950 ring-1 ring-red-600/40 shadow-inner shadow-red-900/50"><i data-feather="alert-octagon" class="w-3.5 h-3.5 text-red-400"></i></div>
+						<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Critical Rules</h2>
+					</div>
+					<div class="px-5 py-4 space-y-3">
+						<div class="rounded-xl border-l-4 border-l-red-500/80 ring-1 ring-white/[0.06] bg-black/30 px-4 py-3.5">
+							<div class="flex items-center gap-2 mb-2"><i data-feather="eye" class="w-4 h-4 text-red-400 shrink-0"></i><p class="font-bold text-gray-200 text-sm">1. Check the Yellow Flag Before Joining</p></div>
+							<p class="text-sm text-gray-500 leading-relaxed">Every rally has a yellow flag menu showing the 4 active joiner skills. <strong class="text-gray-300">Check it before confirming.</strong> If all 4 DamageUp slots are already filled, just send troops — or use a blue hero for capacity. If you see a defensive hero in the top 4, contact the rally leader to kick. Takes 5 seconds.</p>
+						</div>
+						<div class="rounded-xl border-l-4 border-l-amber-500/70 ring-1 ring-white/[0.06] bg-black/30 px-4 py-3.5">
+							<div class="flex items-center gap-2 mb-2"><i data-feather="map-pin" class="w-4 h-4 text-amber-400 shrink-0"></i><p class="font-bold text-gray-200 text-sm">2. Rally Leaders Must Be Close to the Pitfall</p></div>
+							<p class="text-sm text-gray-500 leading-relaxed">March time = wasted event time. Only open a rally if your city is within 5 minutes of the Pitfall. Strong rally leaders must teleport near the trap before the event starts. A rally with a 2-minute march hitting the bear 10× beats one near the Pitfall that only hits 5×.</p>
+						</div>
+						<div class="rounded-xl border-l-4 border-l-blue-500/70 ring-1 ring-white/[0.06] bg-black/30 px-4 py-3.5">
+							<div class="flex items-center gap-2 mb-2"><i data-feather="sliders" class="w-4 h-4 text-blue-400 shrink-0"></i><p class="font-bold text-gray-200 text-sm">3. R4/R5: Manage the Number of Concurrent Rallies</p></div>
+							<p class="text-sm text-gray-500 leading-relaxed mb-2">Too many simultaneous rallies spreads joiners too thin. The math strongly favors a few well-filled rallies over many diluted ones. If your alliance has 40 players and 20 rallies open at once, none of them will get the optimal 2 Chenko + 2 Amane combo.</p>
+							<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-xs bg-blue-950/30 ring-1 ring-blue-900/30 text-blue-300">
+								<i data-feather="info" class="w-3 h-3 mt-0.5 shrink-0"></i>
+								<span><strong class="text-blue-200">Joiner cap trick:</strong> R4/R5 can limit troops per join (e.g. max 20,000). This forces more joiners per rally, distributes hero skills correctly, and prevents one whale from filling an entire rally slot alone.</span>
+							</div>
+						</div>
+						<div class="rounded-xl border-l-4 border-l-orange-500/70 ring-1 ring-white/[0.06] bg-black/30 px-4 py-3.5">
+							<div class="flex items-center gap-2 mb-2"><i data-feather="refresh-cw" class="w-4 h-4 text-orange-400 shrink-0"></i><p class="font-bold text-gray-200 text-sm">4. Formation Preset — Save Before Event Day</p></div>
+							<p class="text-sm text-gray-500 leading-relaxed">Set up your Bear Hunt formation (the correct Infantry/Cavalry/Archer ratio for your gen) as a saved preset. Bear Hunt is not the time for manual troop adjustments. A ready preset = join in 10 seconds with no errors. Update every time you change generation or after a major troop upgrade.</p>
+						</div>
+						<div class="rounded-xl border-l-4 border-l-green-500/70 ring-1 ring-white/[0.06] bg-black/30 px-4 py-3.5">
+							<div class="flex items-center gap-2 mb-2"><i data-feather="clock" class="w-4 h-4 text-green-400 shrink-0"></i><p class="font-bold text-gray-200 text-sm">5. Schedule Around Active Players, Not Whales</p></div>
+							<p class="text-sm text-gray-500 leading-relaxed">The strongest TC30 whale in the perfect Pitfall position means nothing if they're asleep. Run two Hunting Traps and poll members on available time slots. Choose the two slots with the most confirmed attendance — a slightly weaker setup that fills rallies quickly beats a perfect setup with half the alliance offline.</p>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article aria-label="Rewards">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-yellow-500/70 bg-gradient-to-r from-yellow-950/40 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-yellow-950 ring-1 ring-yellow-600/30 shadow-inner shadow-yellow-900/50"><i data-feather="gift" class="w-3.5 h-3.5 text-yellow-400"></i></div>
+						<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Rewards</h2>
+					</div>
+					<div class="px-5 py-4 space-y-3">
+						<p class="text-sm text-gray-500 leading-relaxed">Bear Trap is <strong class="text-gray-300">the single most important recurring event for gear progression</strong>. Every Forge Hammer you need for hero gear upgrades comes from here. Consistently missing events means your gear will fall behind in ways that are hard to recover.</p>
+						<div class="grid grid-cols-2 gap-2">
+							<div class="bg-black/40 ring-1 ring-white/[0.07] rounded-xl px-3 py-3.5 hover:ring-red-900/40 hover:bg-red-950/10 transition-all"><i data-feather="tool" class="w-4 h-4 text-red-400 mb-2"></i><p class="text-sm font-bold text-gray-200">Forge Hammers</p><p class="text-xs text-gray-500 mt-0.5">Primary crafting material for hero gear upgrades — no other event comes close as a source</p></div>
+							<div class="bg-black/40 ring-1 ring-white/[0.07] rounded-xl px-3 py-3.5 hover:ring-blue-900/40 hover:bg-blue-950/10 transition-all"><i data-feather="package" class="w-4 h-4 text-blue-400 mb-2"></i><p class="text-sm font-bold text-gray-200">Resources</p><p class="text-xs text-gray-500 mt-0.5">Food, wood, stone, iron — amounts scale with alliance damage tier</p></div>
+							<div class="bg-black/40 ring-1 ring-white/[0.07] rounded-xl px-3 py-3.5 hover:ring-yellow-900/40 hover:bg-yellow-950/10 transition-all"><i data-feather="award" class="w-4 h-4 text-yellow-400 mb-2"></i><p class="text-sm font-bold text-gray-200">Alliance Tokens</p><p class="text-xs text-gray-500 mt-0.5">200 tokens per Hunting Arrow donated — usable in the Alliance Shop</p></div>
+							<div class="bg-black/40 ring-1 ring-white/[0.07] rounded-xl px-3 py-3.5 hover:ring-green-900/40 hover:bg-green-950/10 transition-all"><i data-feather="trending-up" class="w-4 h-4 text-green-400 mb-2"></i><p class="text-sm font-bold text-gray-200">Personal Damage Rewards</p><p class="text-xs text-gray-500 mt-0.5">Individual bonus tier based on personal damage — boosted by joining the strongest rally leader</p></div>
+							<div class="bg-purple-950/25 ring-1 ring-purple-800/30 rounded-xl px-3 py-3.5 col-span-2">
+								<div class="flex items-center gap-2 mb-1.5">
+									<i data-feather="box" class="w-4 h-4 text-purple-400"></i>
+									<p class="text-sm font-bold text-gray-200">Lucky Hero Gear Chests</p>
+									<span class="text-[8px] bg-purple-950/80 text-purple-300 ring-1 ring-purple-700/40 px-2 py-0.5 rounded-full font-black uppercase tracking-widest animate-pulse">NEW</span>
+								</div>
+								<p class="text-xs text-gray-500">Random chance to receive Mythic equipment. Amount scales with personal damage contribution — yet another reason to always join the strongest rally leader.</p>
+							</div>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-teal-950/35 border-l-[3px] border-l-teal-500/60 ring-1 ring-teal-900/30 text-teal-300">
+							<i data-feather="heart" class="w-4 h-4 mt-0.5 shrink-0 text-teal-400"></i>
+							<span><strong class="text-teal-200">Smart Milestone Play (final 5 minutes):</strong> Once you've locked your reward tier and the next tier is no longer reachable, <strong class="text-teal-100">give up your spot to an alliance member who is close to their milestone</strong>. You've already secured your rewards — nothing is lost from you. Good alliances coordinate this in the final 5 minutes.</span>
+						</div>
+						<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-red-950/35 border-l-[3px] border-l-red-500/60 ring-1 ring-red-900/30 text-red-300">
+							<i data-feather="star" class="w-4 h-4 mt-0.5 shrink-0 text-red-400"></i>
+							<span>Low spenders typically deal around <strong class="text-red-200">1–1.5M personal damage</strong> in their first few weeks. Higher spenders scale significantly above this. Focusing on Archer Lethality research and gear delivers the best return here before any other event.</span>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article aria-label="Quick Reference Summary">
+				<div class="bg-[#0d1018] rounded-2xl ring-1 ring-white/[0.07] overflow-hidden shadow-2xl shadow-black/60">
+					<div class="flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.06] border-l-[3px] border-l-white/20 bg-gradient-to-r from-gray-800/30 to-transparent">
+						<div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-gray-800/80 ring-1 ring-white/10"><i data-feather="list" class="w-3.5 h-3.5 text-gray-400"></i></div>
+						<h2 class="text-[11px] font-black uppercase tracking-[0.15em] text-white">Quick Reference Summary</h2>
+					</div>
+					<div class="divide-y divide-white/[0.05]">
+						<div class="grid grid-cols-12 px-4 py-2.5 bg-black/40 text-[8px] font-black text-gray-600 uppercase tracking-[0.15em]"><span class="col-span-5">Action</span><span class="col-span-7">Why It Matters</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 hover:bg-white/[0.02] transition-colors"><span class="col-span-5 font-medium text-teal-400">Recall troops before event</span><span class="col-span-7 text-gray-500 text-xs">No personal cooldown — every minute troops are outside = direct damage loss</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.01] hover:bg-white/[0.025] transition-colors"><span class="col-span-5 font-medium text-gray-300">Pitfall to Level 5 first</span><span class="col-span-7 text-gray-500 text-xs">+25% Attack for every troop in every rally — only requires Intel Mission arrows</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 hover:bg-white/[0.02] transition-colors"><span class="col-span-5 font-medium text-cyan-400 font-bold">Use 2 Chenko + 2 Amane</span><span class="col-span-7 text-gray-500 text-xs">12.5% more than 4 Chenko — different IDs = multiplicative stacking</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.01] hover:bg-white/[0.025] transition-colors"><span class="col-span-5 font-medium text-gray-300">Chenko needs ≥4★ to join</span><span class="col-span-7 text-gray-500 text-xs">Stand of Arms can only be maxed to Level 5 after Chenko reaches 4 stars</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 hover:bg-white/[0.02] transition-colors"><span class="col-span-5 font-medium text-gray-300">Max joiner skill to Lv5 first</span><span class="col-span-7 text-gray-500 text-xs">Level 5 Howard displaces Chenko Level 4 — always max skill before using as joiner</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.01] hover:bg-white/[0.025] transition-colors"><span class="col-span-5 font-medium text-gray-300">Don't equip gear on joiner heroes</span><span class="col-span-7 text-gray-500 text-xs">Joiner hero gear is completely ignored — has zero effect whatsoever</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 hover:bg-white/[0.02] transition-colors"><span class="col-span-5 font-medium text-gray-300">Join the strongest rally leader</span><span class="col-span-7 text-gray-500 text-xs">Personal damage uses leader stats — same troops, more points in a powerful rally</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.01] hover:bg-white/[0.025] transition-colors"><span class="col-span-5 font-medium text-gray-300">Diana/Fahd in joiner slots 2–3</span><span class="col-span-7 text-gray-500 text-xs">March speed buff on return to city — faster cycle to the next rally</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 hover:bg-white/[0.02] transition-colors"><span class="col-span-5 font-medium text-gray-300">Check yellow flag before joining</span><span class="col-span-7 text-gray-500 text-xs">4 DamageUp slots full → send troops only, no need for a hero</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.01] hover:bg-white/[0.025] transition-colors"><span class="col-span-5 font-medium text-gray-300">Gen 4–7 = Cavalry 25–30%</span><span class="col-span-7 text-gray-500 text-xs">Before Gen 8, Cavalry Lethality is nearly on par with Archer — don't drop it too fast</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 hover:bg-white/[0.02] transition-colors"><span class="col-span-5 font-medium text-gray-300">Gen 8+ = 1/10/89 formation</span><span class="col-span-7 text-gray-500 text-xs">When Archer Lethality is &gt;358 points above Cavalry — time to shift to endgame formation</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.01] hover:bg-white/[0.025] transition-colors"><span class="col-span-5 font-medium text-gray-300">Activate pets before event</span><span class="col-span-7 text-gray-500 text-xs">Black Panther (+10% Lethality), Mighty Bison (capacity), Giant Rhino (+10% Attack)</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 hover:bg-white/[0.02] transition-colors"><span class="col-span-5 font-medium text-rose-400 font-bold">Widget only on leader (P2W)</span><span class="col-span-7 text-gray-500 text-xs">Helga's Widget is wasted in slot 2–3 — let her lead a separate rally</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.01] hover:bg-white/[0.025] transition-colors"><span class="col-span-5 font-medium text-red-400 font-bold">Never send Jabel as joiner</span><span class="col-span-7 text-gray-500 text-xs">Active defensive skill blocks a better joiner — worse than sending no hero at all</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 hover:bg-white/[0.02] transition-colors"><span class="col-span-5 font-medium text-red-400 font-bold">Never send Long Fei as joiner</span><span class="col-span-7 text-gray-500 text-xs">2 defensive skills — worse than Gen 1 heroes for Bear Hunt</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.01] hover:bg-white/[0.025] transition-colors"><span class="col-span-5 font-medium text-gray-300">Max 1 chance-based joiner</span><span class="col-span-7 text-gray-500 text-xs">Marlin, Petra, Jaeger, Rosa — stacking multiples adds no extra effect</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 hover:bg-white/[0.02] transition-colors"><span class="col-span-5 font-medium text-gray-300">Stop donating at Level 5</span><span class="col-span-7 text-gray-500 text-xs">Extra arrows are wasted, not stored — R4/R5 announce once cap is reached</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.01] hover:bg-white/[0.025] transition-colors"><span class="col-span-5 font-medium text-gray-300">Amadeus leads OR joins</span><span class="col-span-7 text-gray-500 text-xs">If Helga is 4–5★, Amadeus joining many rallies beats him hosting one rally alone</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 hover:bg-white/[0.02] transition-colors"><span class="col-span-5 font-medium text-gray-300">Leader kick bad joiners</span><span class="col-span-7 text-gray-500 text-xs">Level 5 Howard/Jabel displaces Chenko — kick and educate, don't stay silent</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-orange-950/15 hover:bg-orange-950/25 transition-colors"><span class="col-span-5 font-medium text-orange-400 font-bold">Final Push: everyone opens rallies</span><span class="col-span-7 text-gray-500 text-xs">Last 5–7 minutes all members open rallies to give slots to strong players just returning</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 hover:bg-white/[0.02] transition-colors"><span class="col-span-5 font-medium text-gray-300">Saul better than Quinn after 4★</span><span class="col-span-7 text-gray-500 text-xs">Before Saul 4★, Quinn is still comparable — check star level before deciding</span></div>
+						<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.01] hover:bg-white/[0.025] transition-colors"><span class="col-span-5 font-medium text-gray-300">Archer Lethality = upgrade priority #1</span><span class="col-span-7 text-gray-500 text-xs">Push via Governor Gear goggles, Academy Research, Islands. Compound effect every event.</span></div>
+					</div>
+				</div>
+			</article>
+
+		</main>
+
+		<footer>
+			<div class="rounded-3xl ring-1 ring-white/[0.07] px-6 py-6 bg-[radial-gradient(ellipse_at_50%_-10%,rgba(220,38,38,0.18)_0%,#0b0e1a_55%,#07090f_100%)] shadow-2xl shadow-black/60">
+				<div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+					<div>
+						<a href="https://ks-bigdragon.github.io/" rel="author" class="text-white font-black text-2xl tracking-tighter leading-none hover:text-red-200 transition-colors">[BIG]<span class="text-red-400">DRAGON</span></a>
+						<p class="text-gray-600 text-xs mt-1.5">Bear Trap · All Generations Guide · <span class="text-cyan-600/80">v3 Complete</span></p>
+					</div>
+					<div class="w-px h-10 bg-white/[0.06] hidden sm:block"></div>
+					<nav aria-label="External Kingshot resources">
+						<p class="text-gray-600 text-[10px] text-center sm:text-right leading-relaxed tracking-wide">
+							kingshotguides.com · kingshot.fandom.com<br>kingshotmastery.com · kingshotguide.org · kingshot-data.com
+						</p>
+					</nav>
+				</div>
 			</div>
-			<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-blue-950/30 border border-blue-900/50 text-blue-300">
-				<i data-feather="navigation" class="w-4 h-4 mt-0.5 shrink-0 text-blue-400"></i>
-				<span><strong class="text-blue-200">Secondary marches:</strong> If you have secondary marches, use Chenko or Amadeus on those to join different rallies simultaneously while your primary march is in another. Strong accounts contributing S-tier joiner skills to 2–3 rallies at once is one of the highest-leverage moves available. If you can do this and aren't, start immediately.</span>
-			</div>
-		</div>
+		</footer>
+
 	</div>
-
-	<div class="bg-gray-900 rounded-2xl border border-white/5 overflow-hidden">
-		<div class="flex items-center gap-3 px-5 py-4 border-b border-white/5">
-			<div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-green-950/60 border border-green-800/30"><i data-feather="trending-up" class="w-3.5 h-3.5 text-green-400"></i></div>
-			<h2 class="text-xs font-black uppercase tracking-widest text-white">Pitfall Upgrade System</h2>
-		</div>
-		<div class="px-5 py-4 space-y-3">
-			<p class="text-sm text-gray-500">The Pitfall must reach <strong class="text-gray-300">Level 5 before the first rally launches</strong>. The +25% Attack bonus applies to every troop in every rally for the full 30 minutes. Not maxing it is a full alliance damage penalty — it's not optional.</p>
-
-			<div class="overflow-x-auto rounded-xl border border-white/5">
-				<table class="w-full text-sm">
-					<thead>
-						<tr class="bg-gray-950/60 border-b border-white/5">
-							<th class="px-4 py-2.5 text-left text-xs font-black text-gray-500 uppercase tracking-wide">Level</th>
-							<th class="px-4 py-2.5 text-center text-xs font-black text-gray-500 uppercase tracking-wide">Arrows This Level</th>
-							<th class="px-4 py-2.5 text-center text-xs font-black text-gray-500 uppercase tracking-wide">Total Arrows</th>
-							<th class="px-4 py-2.5 text-center text-xs font-black text-green-400 uppercase tracking-wide">Attack Bonus</th>
-						</tr>
-					</thead>
-					<tbody class="divide-y divide-white/5">
-						<tr><td class="px-4 py-2.5 text-gray-400">Level 1</td><td class="px-4 py-2.5 text-center text-gray-400">200</td><td class="px-4 py-2.5 text-center text-gray-400">200</td><td class="px-4 py-2.5 text-center text-green-400 font-semibold">+5%</td></tr>
-						<tr class="bg-white/[0.02]"><td class="px-4 py-2.5 text-gray-400">Level 2</td><td class="px-4 py-2.5 text-center text-gray-400">300</td><td class="px-4 py-2.5 text-center text-gray-400">500</td><td class="px-4 py-2.5 text-center text-green-400 font-semibold">+10%</td></tr>
-						<tr><td class="px-4 py-2.5 text-gray-400">Level 3</td><td class="px-4 py-2.5 text-center text-gray-400">400</td><td class="px-4 py-2.5 text-center text-gray-400">900</td><td class="px-4 py-2.5 text-center text-green-400 font-semibold">+15%</td></tr>
-						<tr class="bg-white/[0.02]"><td class="px-4 py-2.5 text-gray-400">Level 4</td><td class="px-4 py-2.5 text-center text-gray-400">500</td><td class="px-4 py-2.5 text-center text-gray-400">1,400</td><td class="px-4 py-2.5 text-center text-green-400 font-semibold">+20%</td></tr>
-						<tr class="bg-green-950/20"><td class="px-4 py-2.5 font-bold text-gray-200">Level 5 ★ Max</td><td class="px-4 py-2.5 text-center font-bold text-gray-300">500</td><td class="px-4 py-2.5 text-center font-bold text-gray-300">1,900</td><td class="px-4 py-2.5 text-center text-green-400 font-black">+25%</td></tr>
-					</tbody>
-				</table>
-			</div>
-
-			<div class="grid grid-cols-2 gap-2 text-xs">
-				<div class="bg-blue-950/30 border border-blue-900/50 rounded-xl p-3">
-					<p class="font-black text-blue-400 uppercase tracking-wide mb-1">Arrow Math</p>
-					<p class="text-gray-400 leading-relaxed">Each member earns <strong class="text-gray-200">24 arrows/day</strong> from Intel Missions. 40 active members × 24 × 2 days = <strong class="text-gray-200">1,920 arrows</strong> — enough to max the Pitfall every cycle.</p>
-				</div>
-				<div class="bg-red-950/30 border border-red-900/50 rounded-xl p-3">
-					<p class="font-black text-red-400 uppercase tracking-wide mb-1">Stop at Level 5</p>
-					<p class="text-gray-400 leading-relaxed">Extra arrows after Level 5 are <strong class="text-gray-200">not banked</strong> for the next event — they're wasted. R4/R5 must post in chat when the cap is hit so members don't burn arrows unnecessarily.</p>
-				</div>
-			</div>
-
-			<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-amber-950/30 border border-amber-900/50 text-amber-300">
-				<i data-feather="alert-circle" class="w-4 h-4 mt-0.5 shrink-0 text-amber-400"></i>
-				<span>Intel Mission completion must be a <strong class="text-amber-200">clear alliance expectation, not a casual suggestion.</strong> One member skipping their daily arrows is small. Across 40 members with inconsistent completion over 2 days, the gap is the difference between a Level 3 and Level 5 Pitfall — a real 10–15% damage penalty across every rally before anyone even launches.</span>
-			</div>
-		</div>
-	</div>
-
-	<div class="bg-gray-900 rounded-2xl border border-white/5 overflow-hidden">
-		<div class="flex items-center gap-3 px-5 py-4 border-b border-white/5">
-			<div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-amber-950/60 border border-amber-800/30"><i data-feather="feather" class="w-3.5 h-3.5 text-amber-400"></i></div>
-			<h2 class="text-xs font-black uppercase tracking-widest text-white">Pets — What Helps, What Doesn't</h2>
-		</div>
-		<div class="px-5 py-4 space-y-3">
-			<p class="text-sm text-gray-500">Activate these before the event starts. Pet skills are a free damage boost most players forget to use — and some popular pets do nothing here.</p>
-			<div class="space-y-2">
-				<div class="flex items-start gap-3 bg-green-950/30 border border-green-900/50 rounded-xl px-4 py-3">
-					<span class="w-6 h-6 bg-green-700/60 text-green-300 border border-green-600/50 rounded-full flex items-center justify-center text-xs font-black shrink-0 mt-0.5">✓</span>
-					<div class="text-sm">
-						<p class="font-bold text-green-300">Mighty Bison — Squad Capacity +15,000 (2h)</p>
-						<p class="text-green-500 text-xs mt-0.5">More troops per march = more damage per rally. Critical for rally hosts who fill large rallies.</p>
-					</div>
-				</div>
-				<div class="flex items-start gap-3 bg-green-950/30 border border-green-900/50 rounded-xl px-4 py-3">
-					<span class="w-6 h-6 bg-green-700/60 text-green-300 border border-green-600/50 rounded-full flex items-center justify-center text-xs font-black shrink-0 mt-0.5">✓</span>
-					<div class="text-sm">
-						<p class="font-bold text-green-300">Black Panther — Troop Lethality +10% (2h)</p>
-						<p class="text-green-500 text-xs mt-0.5">Direct damage buff. Lethality is the stat you want most — this is the best combat pet for this event.</p>
-					</div>
-				</div>
-				<div class="flex items-start gap-3 bg-green-950/30 border border-green-900/50 rounded-xl px-4 py-3">
-					<span class="w-6 h-6 bg-green-700/60 text-green-300 border border-green-600/50 rounded-full flex items-center justify-center text-xs font-black shrink-0 mt-0.5">✓</span>
-					<div class="text-sm">
-						<p class="font-bold text-green-300">Giant Rhino — All Squad Attack +10% (2h)</p>
-						<p class="text-green-500 text-xs mt-0.5">Solid flat attack multiplier across all troop types. Use if Black Panther is on cooldown.</p>
-					</div>
-				</div>
-				<div class="flex items-start gap-3 bg-red-950/30 border border-red-900/50 rounded-xl px-4 py-3">
-					<span class="w-6 h-6 bg-red-700/60 text-red-300 border border-red-600/50 rounded-full flex items-center justify-center text-xs font-black shrink-0 mt-0.5">✗</span>
-					<div class="text-sm">
-						<p class="font-bold text-red-300">Moose — only the Rally Capacity variant works</p>
-						<p class="text-red-500 text-xs mt-0.5">The Moose's Health-based skill is completely useless here because the bear has no health bar to attack — it only has Defense. Many players activate Moose expecting damage — it does nothing unless you're using the Rally Capacity variant specifically.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="bg-gray-900 rounded-2xl border border-white/5 overflow-hidden">
-		<div class="flex items-center gap-3 px-5 py-4 border-b border-white/5">
-			<div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-red-950/60 border border-red-800/30"><i data-feather="alert-octagon" class="w-3.5 h-3.5 text-red-400"></i></div>
-			<h2 class="text-xs font-black uppercase tracking-widest text-white">Critical Rules</h2>
-		</div>
-		<div class="px-5 py-4 space-y-3">
-
-			<div class="rounded-xl border-l-4 border-l-red-500 border border-white/5 bg-gray-950/40 px-4 py-3.5">
-				<div class="flex items-center gap-2 mb-2">
-					<i data-feather="eye" class="w-4 h-4 text-red-400 shrink-0"></i>
-					<p class="font-bold text-gray-200 text-sm">1. Check the Yellow Flag Before Joining</p>
-				</div>
-				<p class="text-sm text-gray-500">Inside every rally there's a yellow flag menu that shows which 4 joiner skills are currently active. <strong class="text-gray-300">Check it before confirming your join.</strong> If 4 Chenkos are already present and you're bringing a 5th, your skill won't be counted — send troops only or use a blue hero for capacity. Takes 5 seconds and prevents the single most common joiner mistake.</p>
-			</div>
-
-			<div class="rounded-xl border-l-4 border-l-amber-500 border border-white/5 bg-gray-950/40 px-4 py-3.5">
-				<div class="flex items-center gap-2 mb-2">
-					<i data-feather="map-pin" class="w-4 h-4 text-amber-400 shrink-0"></i>
-					<p class="font-bold text-gray-200 text-sm">2. Rally Leaders Must Be Near the Pitfall</p>
-				</div>
-				<p class="text-sm text-gray-500">March time is wasted event time. Only launch rallies if your city is within 5 minutes of the Pitfall. Strong rally leaders should teleport close to the trap before the event starts — forming a visible cluster makes it easier for joiners to find and fill rallies quickly. A rally with 2-minute march time that hits the bear 10 times beats a nearby rally that only hits 5 times.</p>
-			</div>
-
-			<div class="rounded-xl border-l-4 border-l-blue-500 border border-white/5 bg-gray-950/40 px-4 py-3.5">
-				<div class="flex items-center gap-2 mb-2">
-					<i data-feather="sliders" class="w-4 h-4 text-blue-400 shrink-0"></i>
-					<p class="font-bold text-gray-200 text-sm">3. R4/R5: Manage How Many Rallies Run Simultaneously</p>
-				</div>
-				<p class="text-sm text-gray-500 mb-2">Running too many rallies at once spreads joiners thin. Each rally needs to fill with S-tier joiner heroes to hit peak damage. If your alliance has 40 players and 20 rallies open at once, no rally will get 4 Chenkos. The math strongly favors fewer, fully-stacked rallies over many diluted ones.</p>
-				<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-xs bg-blue-950/30 border border-blue-900/50 text-blue-300">
-					<i data-feather="info" class="w-3 h-3 mt-0.5 shrink-0"></i>
-					<span><strong class="text-blue-200">Joiner restriction trick:</strong> R4/R5 can tell joiners to cap their troop send (e.g. max 20,000 troops per join). This forces more joiners per rally, distributes damage more evenly, and prevents one whale from filling an entire rally slot alone. This solves the "instant fill" problem and is used by top alliances.</span>
-				</div>
-			</div>
-
-			<div class="rounded-xl border-l-4 border-l-orange-500 border border-white/5 bg-gray-950/40 px-4 py-3.5">
-				<div class="flex items-center gap-2 mb-2">
-					<i data-feather="refresh-cw" class="w-4 h-4 text-orange-400 shrink-0"></i>
-					<p class="font-bold text-gray-200 text-sm">4. Use Formation Presets — Save Before the Event</p>
-				</div>
-				<p class="text-sm text-gray-500">Set up your Bear Hunt formation (correct Infantry/Cavalry/Archer split for your gen) as a saved Formation Preset. Bear Hunt is not the time to manually adjust troops. Having the preset ready means you can join rallies in 10 seconds flat without errors. Update your preset every time you change generations or after major troop upgrades.</p>
-			</div>
-
-			<div class="rounded-xl border-l-4 border-l-green-500 border border-white/5 bg-gray-950/40 px-4 py-3.5">
-				<div class="flex items-center gap-2 mb-2">
-					<i data-feather="clock" class="w-4 h-4 text-green-400 shrink-0"></i>
-					<p class="font-bold text-gray-200 text-sm">5. Schedule for Your Active Players, Not Your Whales</p>
-				</div>
-				<p class="text-sm text-gray-500">A top TC30 whale at a perfect Pitfall location matters nothing if they're asleep. Run two Hunting Traps (your alliance gets two) and poll members on their available time slots. Pick the two slots with the most confirmed attendance — even a slightly weaker formation that fills rallies quickly beats a perfect setup with half your alliance offline.</p>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="bg-gray-900 rounded-2xl border border-white/5 overflow-hidden">
-		<div class="flex items-center gap-3 px-5 py-4 border-b border-white/5">
-			<div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-yellow-950/60 border border-yellow-800/30"><i data-feather="gift" class="w-3.5 h-3.5 text-yellow-400"></i></div>
-			<h2 class="text-xs font-black uppercase tracking-widest text-white">Rewards</h2>
-		</div>
-		<div class="px-5 py-4 space-y-3">
-			<p class="text-sm text-gray-500">Bear Trap is the <strong class="text-gray-300">single most important recurring event for gear progression</strong>. Every Forge Hammer you'll ever need for hero gear upgrades comes from here. Miss events consistently and your gear falls behind in ways that are hard to recover from.</p>
-			<div class="grid grid-cols-2 gap-2">
-				<div class="bg-gray-950/60 border border-white/5 rounded-xl px-3 py-3">
-					<i data-feather="tool" class="w-4 h-4 text-red-400 mb-1.5"></i>
-					<p class="text-sm font-bold text-gray-200">Forge Hammers</p>
-					<p class="text-xs text-gray-500 mt-0.5">Primary crafting material for hero gear upgrades — no other event matches this source</p>
-				</div>
-				<div class="bg-gray-950/60 border border-white/5 rounded-xl px-3 py-3">
-					<i data-feather="package" class="w-4 h-4 text-blue-400 mb-1.5"></i>
-					<p class="text-sm font-bold text-gray-200">Resources</p>
-					<p class="text-xs text-gray-500 mt-0.5">Food, wood, stone, iron — amount scales with alliance damage tier</p>
-				</div>
-				<div class="bg-gray-950/60 border border-white/5 rounded-xl px-3 py-3">
-					<i data-feather="award" class="w-4 h-4 text-yellow-400 mb-1.5"></i>
-					<p class="text-sm font-bold text-gray-200">Alliance Tokens</p>
-					<p class="text-xs text-gray-500 mt-0.5">200 tokens per Hunting Arrow donated — usable in Alliance Shop</p>
-				</div>
-				<div class="bg-gray-950/60 border border-white/5 rounded-xl px-3 py-3">
-					<i data-feather="trending-up" class="w-4 h-4 text-green-400 mb-1.5"></i>
-					<p class="text-sm font-bold text-gray-200">Personal Damage Rewards</p>
-					<p class="text-xs text-gray-500 mt-0.5">Individual bonus tier based on your personal damage contribution, separate from alliance total</p>
-				</div>
-			</div>
-			<div class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm bg-red-950/30 border border-red-900/50 text-red-300">
-				<i data-feather="star" class="w-4 h-4 mt-0.5 shrink-0 text-red-400"></i>
-				<span>Low spenders typically deal around <strong class="text-red-200">1–1.5M personal damage</strong> in the first weeks. Higher spenders scale significantly above this. The per-rally cap scales with your total invested stats — focusing on Archer Lethality research and gear pays off directly here before any other event.</span>
-			</div>
-		</div>
-	</div>
-
-	<div class="bg-gray-900 rounded-2xl border border-white/5 overflow-hidden">
-		<div class="flex items-center gap-3 px-5 py-4 border-b border-white/5">
-			<div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-gray-800 border border-white/5"><i data-feather="list" class="w-3.5 h-3.5 text-gray-400"></i></div>
-			<h2 class="text-xs font-black uppercase tracking-widest text-white">Quick Reference Summary</h2>
-		</div>
-		<div class="divide-y divide-white/5">
-			<div class="grid grid-cols-12 px-4 py-2 bg-gray-950/40 text-[9px] font-semibold text-gray-600 uppercase tracking-wide">
-				<span class="col-span-5">Action</span><span class="col-span-7">Why It Matters</span>
-			</div>
-			<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2">
-				<span class="col-span-5 font-medium text-gray-300">Pitfall to Level 5 first</span>
-				<span class="col-span-7 text-gray-500">+25% Attack for every troop in every rally — costs Intel Mission arrows, nothing else</span>
-			</div>
-			<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.02]">
-				<span class="col-span-5 font-medium text-gray-300">Chenko in slot 1 (joiner)</span>
-				<span class="col-span-7 text-gray-500">+25% Squad Lethality — highest damage joiner skill in the game</span>
-			</div>
-			<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2">
-				<span class="col-span-5 font-medium text-gray-300">Check yellow flag before joining</span>
-				<span class="col-span-7 text-gray-500">If 4 Chenkos are in — send troops only, your skill won't count</span>
-			</div>
-			<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.02]">
-				<span class="col-span-5 font-medium text-gray-300">Gen 4+ = 1/10/89 formation</span>
-				<span class="col-span-7 text-gray-500">Most guides stop at 10/10/80 — the real endgame standard leaves more damage on the table</span>
-			</div>
-			<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2">
-				<span class="col-span-5 font-medium text-gray-300">Rally leaders near Pitfall</span>
-				<span class="col-span-7 text-gray-500">March time = wasted hits — teleport close before the event starts</span>
-			</div>
-			<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.02]">
-				<span class="col-span-5 font-medium text-red-400 font-bold">Never send Jabel as joiner</span>
-				<span class="col-span-7 text-gray-500">Defensive skill actively blocks a better joiner from the top-4 slots — worse than no hero</span>
-			</div>
-			<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2">
-				<span class="col-span-5 font-medium text-red-400 font-bold">Never send Long Fei as joiner</span>
-				<span class="col-span-7 text-gray-500">2 defensive skills — actively worse than many Gen 1 heroes for this event</span>
-			</div>
-			<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.02]">
-				<span class="col-span-5 font-medium text-gray-300">Max 1 chance-based joiner</span>
-				<span class="col-span-7 text-gray-500">Marlin, Petra, Jaeger, Rosa — stacking multiples does exactly nothing extra</span>
-			</div>
-			<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2">
-				<span class="col-span-5 font-medium text-gray-300">Stop donating at Level 5</span>
-				<span class="col-span-7 text-gray-500">Extra arrows beyond max are wasted, not banked — R4/R5 must announce when cap is hit</span>
-			</div>
-			<div class="grid grid-cols-12 px-4 py-3 text-sm gap-2 bg-white/[0.02]">
-				<span class="col-span-5 font-medium text-gray-300">Activate pets before event</span>
-				<span class="col-span-7 text-gray-500">Black Panther (+10% Lethality), Mighty Bison (capacity), Giant Rhino (+10% Attack)</span>
-			</div>
-		</div>
-	</div>
-
-	<footer class="rounded-2xl border border-white/5 px-6 py-5 bg-[radial-gradient(ellipse_at_50%_-20%,rgba(220,38,38,0.2)_0%,#0b0f1c_60%,#06080f_100%)]">
-		<div class="flex flex-col sm:flex-row items-center justify-between gap-3">
-			<div>
-				<p class="text-white font-black text-xl tracking-tight leading-none">[BIG]<span class="text-red-400">DRAGON</span></p>
-				<p class="text-gray-600 text-xs mt-1">Bear Trap · All Generations Guide</p>
-			</div>
-			<p class="text-gray-600 text-xs text-center sm:text-right leading-relaxed">
-				kingshotguides.com · kingshot.fandom.com<br>kingshotmastery.com · kingshotguide.org
-			</p>
-		</div>
-	</footer>
-
-</div>
-<script>feather.replace()</script>
-<script src="sidebar.js"></script>
+	<script>feather.replace()</script>
 </body>
 </html>
